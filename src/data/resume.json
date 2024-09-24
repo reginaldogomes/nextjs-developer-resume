@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "code",
+    "title": "Clean Code",
+    "description": "Escreva código limpo e eficiente, seguindo as melhores práticas."
+  },
+  {
+    "icon": "book",
+    "title": "Object Oriented",
+    "description": "Desenvolvimento orientado a objetos, para uma melhor organização do código."
+  },
+  {
+    "icon": "clock",
+    "title": "24h Service",
+    "description": "Suporte 24 horas para seus serviços."
+  },
+  {
+    "icon": "heart",
+    "title": "Value for Money",
+    "description": "Melhor custo-benefício para os nossos clientes."
+  },
+  {
+    "icon": "speed",
+    "title": "Faster Response",
+    "description": "Resposta rápida para todas as suas solicitações."
+  },
+  {
+    "icon": "cloud",
+    "title": "Cloud Support",
+    "description": "Suporte completo para serviços em cloud."
+  }
+]
