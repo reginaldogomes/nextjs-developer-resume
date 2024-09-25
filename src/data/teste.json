@@ -1,16 +1,16 @@
 [
   {
-    "icon": "code",
+    "icon": "javascript",
     "title": "JavaScript",
     "description": "Escreva código limpo e eficiente, seguindo as melhores práticas."
   },
   {
-    "icon": "book",
+    "icon": "typescript",
     "title": "TypeScript",
     "description": "Desenvolvimento orientado a objetos, para uma melhor organização do código."
   },
   {
-    "icon": "clock",
+    "icon": "react",
     "title": "React",
     "description": "Suporte 24 horas para seus serviços."
   },
@@ -20,12 +20,12 @@
     "description": "Melhor custo-benefício para os nossos clientes."
   },
   {
-    "icon": "speed",
+    "icon": "node",
     "title": "Node",
     "description": "Resposta rápida para todas as suas solicitações."
   },
   {
-    "icon": "cloud",
+    "icon": "tailwind",
     "title": "Tailwind",
     "description": "Suporte completo para serviços em cloud."
   }

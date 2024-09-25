@@ -7,6 +7,19 @@ import {
   FaTachometerAlt,
   FaCloud,
 } from 'react-icons/fa' // Importa ícones do React Icons
+import {
+  FaGithub,
+  FaDocker,
+  FaAws,
+  FaReact,
+  FaNodeJs,
+  FaNode,
+} from 'react-icons/fa'
+import { RiTailwindCssFill } from 'react-icons/ri'
+
+import { SiTypescript } from 'react-icons/si'
+import { BiLogoTypescript } from 'react-icons/bi'
+
 import featuresData from '@/data/teste.json' // Importa o JSON
 import Section from '@/components/Section'
 
@@ -19,12 +32,12 @@ interface Feature {
 
 // Mapeamento dos ícones do React Icons
 const iconMap: { [key: string]: React.ElementType } = {
-  code: FaCode,
-  book: FaBook,
-  clock: FaClock,
+  node: FaNode,
+  react: FaReact,
+  typescript: BiLogoTypescript,
   heart: FaHeart,
   speed: FaTachometerAlt,
-  cloud: FaCloud,
+  tailwind: RiTailwindCssFill,
 }
 
 // Componente usando arrow function sem FC
@@ -32,10 +45,10 @@ const FeatureList = () => (
   <Section>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-        Something You Need To Know
+        Habilidades Técnicas
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {featuresData.map(({ icon, title, description }: Feature) => {
+        {featuresData.map(({ icon, title }: Feature) => {
           const Icon = iconMap[icon] || FaCode // Usa o ícone correspondente ou FaCode como fallback
           return (
             <div
