@@ -8,7 +8,7 @@ export const Hero = () => {
 
   return (
     <Section>
-      <h1 className="text-4xl text-center">{profile.title}</h1>
+      <h1 className="text-3xl text-center lg:text-5xl">{profile.title}</h1>
       <p className="text-2xl text-center">{profile.description}</p>
       <Button variant="secondary" className="mx-auto">
         Sobre Mim
