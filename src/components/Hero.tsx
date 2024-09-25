@@ -10,7 +10,10 @@ export const Hero = () => {
     <Section>
       <h1 className="text-3xl text-center lg:text-5xl">{profile.title}</h1>
       <p className="text-2xl text-center">{profile.description}</p>
-      <Button variant="secondary" className="mx-auto">
+      <Button
+        variant="secondary"
+        className="mx-auto bg-blue-600 text-white text-2xl p-4"
+      >
         Sobre Mim
       </Button>
     </Section>
