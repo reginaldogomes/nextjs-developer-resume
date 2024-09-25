@@ -1,32 +1,29 @@
-[
-  {
-    "icon": "code",
-    "title": "Clean Code",
-    "description": "Escreva código limpo e eficiente, seguindo as melhores práticas."
-  },
-  {
-    "icon": "book",
-    "title": "Object Oriented",
-    "description": "Desenvolvimento orientado a objetos, para uma melhor organização do código."
-  },
-  {
-    "icon": "clock",
-    "title": "24h Service",
-    "description": "Suporte 24 horas para seus serviços."
-  },
-  {
-    "icon": "heart",
-    "title": "Value for Money",
-    "description": "Melhor custo-benefício para os nossos clientes."
-  },
-  {
-    "icon": "speed",
-    "title": "Faster Response",
-    "description": "Resposta rápida para todas as suas solicitações."
-  },
-  {
-    "icon": "cloud",
-    "title": "Cloud Support",
-    "description": "Suporte completo para serviços em cloud."
-  }
-]
+{
+  "name": "Reginaldo Gomes",
+  "title": "Web Development Analyst | Cloud Computing Specialist",
+  "description": "Experienced in creating digital solutions with expertise in JavaScript, TypeScript, Python, and Go, utilizing Clean Architecture, SOLID, and DDD patterns. Specialized in AWS Cloud and front-end development.",
+  "experience": [
+    {
+      "role": "Web Development Analyst",
+      "company": "Tech Company",
+      "duration": "2022 - Present",
+      "details": "Working on cloud-based digital solutions, focusing on front-end technologies like React, Next.js, and AWS services."
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Lisait",
+      "duration": "2021 - 2022",
+      "details": "Developed web applications using React.js, integrated APIs, and improved application performance."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's in Software Engineering",
+      "institution": "University XYZ",
+      "year": "2024"
+    }
+  ],
+  "skills": [
+    "JavaScript", "TypeScript", "React", "Next.js", "AWS", "Clean Architecture", "SOLID", "Python", "Go"
+  ]
+}

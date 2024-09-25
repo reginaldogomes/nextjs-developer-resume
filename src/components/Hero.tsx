@@ -1,22 +1,18 @@
-import { Button } from './ui/button'
+'use client'
+import Section from '@/components/Section'
+import { Button } from '@/components/ui/button'
+import { useProfile } from '@/context/resumeContext'
 
 export const Hero = () => {
+  const { profile } = useProfile()
+
   return (
-    <section>
-      <h1>Desenvolvedor Front-end</h1>
-      <h3>
-        Desenvolvedor Front-End com sólida experiência em JavaScript,
-        especializado em React.js e Next.js para o desenvolvimento de interfaces
-        modernas, dinâmicas e escaláveis. Atuo de forma consistente em ambientes
-        de cloud computing, com foco em AWS, e aplico boas práticas de DevOps
-        para automação e gerenciamento eficiente de infraestrutura. Além disso,
-        tenho conhecimentos em cibersegurança, implementando medidas preventivas
-        e corretivas ao longo de todo o ciclo de desenvolvimento, garantindo a
-        segurança de dados e a integridade das aplicações. Comprometido em
-        entregar soluções inovadoras e robustas, sempre alinhado às melhores
-        práticas do mercado.
-      </h3>
-      <Button variant="ghost">Click me</Button>
-    </section>
+    <Section>
+      <h1 className="text-4xl text-center">{profile.title}</h1>
+      <p className="text-2xl text-center">{profile.description}</p>
+      <Button variant="secondary" className="mx-auto">
+        Sobre Mim
+      </Button>
+    </Section>
   )
 }

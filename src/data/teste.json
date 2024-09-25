@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "JavaScript",
+    "title": "Clean Code",
+    "description": "Escreva código limpo e eficiente, seguindo as melhores práticas."
+  },
+  {
+    "icon": "TypeScript",
+    "title": "Object Oriented",
+    "description": "Desenvolvimento orientado a objetos, para uma melhor organização do código."
+  },
+  {
+    "icon": "React",
+    "title": "24h Service",
+    "description": "Suporte 24 horas para seus serviços."
+  },
+  {
+    "icon": "Next",
+    "title": "Value for Money",
+    "description": "Melhor custo-benefício para os nossos clientes."
+  },
+  {
+    "icon": "Node",
+    "title": "Faster Response",
+    "description": "Resposta rápida para todas as suas solicitações."
+  },
+  {
+    "icon": "Tailwind",
+    "title": "Cloud Support",
+    "description": "Suporte completo para serviços em cloud."
+  },
+  {
+    "icon": "HTML",
+    "title": "Cloud Support",
+    "description": "Suporte completo para serviços em cloud."
+  },
+  {
+    "icon": "CSS",
+    "title": "Cloud Support",
+    "description": "Suporte completo para serviços em cloud."
+  }
+]
