@@ -8,7 +8,7 @@ interface SectionProps {
 const Section = ({ children, className = '' }: SectionProps) => {
   return (
     <section
-      className={`flex flex-col justify-center items-center p-16 w-full lg:w-[1024px] gap-8 ${className}`}
+      className={`flex flex-col justify-center items-center w-full gap-8 lg:w-[1024px] p-16 ${className}`}
     >
       {children}
     </section>
