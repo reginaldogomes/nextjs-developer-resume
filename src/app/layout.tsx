@@ -24,8 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={montserrat.className}>
-      <head>{/* Script do Google Analytics */}</head>
+    <html lang="pt" className={montserrat.className}>
       <body className="flex-col antialiased">
         <ProfileProvider>
           <Header />

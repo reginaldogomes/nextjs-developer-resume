@@ -11,7 +11,6 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-montserrat)'],
-        // mono: ['var(--font-roboto-mono)'],
       },
       colors: {
         background: 'hsl(var(--background))',
