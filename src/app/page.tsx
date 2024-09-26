@@ -5,9 +5,9 @@ import FeatureList from '@/components/Skills'
 
 export default function Home() {
   return (
-    <Main>
+    <>
       <Hero />
       <FeatureList />
-    </Main>
+    </>
   )
 }

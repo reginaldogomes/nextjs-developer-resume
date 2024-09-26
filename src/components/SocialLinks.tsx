@@ -1,6 +1,5 @@
 // components/SocialLinks.tsx
-import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 interface SocialLink {
   name: string
