@@ -1,7 +1,7 @@
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import type { Metadata } from 'next'
 import './globals.css'
-import { Montserrat } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import { Header } from '@/components/template/Header'
 import { Footer } from '@/components/template/Footer'
 import { Main } from '@/components/Main'
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     'Conheça Reginaldo Gomes, um analista desenvolvedor front-end especializado em criar soluções digitais eficientes e escaláveis. Com experiência em JavaScript, TypeScript e frameworks modernos como React e Next.js, ele oferece expertise em desenvolvimento web, arquitetura limpa e boas práticas de programação.',
 }
 
-const montserrat = Montserrat({
+const nunito = Nunito({
   subsets: ['latin'],
-  variable: '--font-montserrat',
+  variable: '--font-nunito',
 })
 
 export default function RootLayout({
@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt" className={montserrat.className}>
-      <body className="flex-col antialiased">
+    <html lang="pt" className={nunito.className}>
+      <body className="flex-col">
         <ProfileProvider>
           <Header />
           <Main>{children}</Main>

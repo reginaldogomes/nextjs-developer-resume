@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 body {
-  /* font-family: 'Nunito', sans-serif; */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased; /* Suavização para WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suavização para Firefox no macOS */
 }
 
 @layer utilities {
