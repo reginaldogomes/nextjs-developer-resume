@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Header } from '@/components/template/Header'
 import { Footer } from '@/components/template/Footer'
+import { Main } from '@/components/Main'
 import { ProfileProvider } from '@/context/resumeContext'
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className="flex-col antialiased">
         <ProfileProvider>
           <Header />
-          {children}
+          <Main>{children}</Main>
           <Footer />
         </ProfileProvider>
         <GoogleAnalytics />
