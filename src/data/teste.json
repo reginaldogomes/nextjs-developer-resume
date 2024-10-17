@@ -25,6 +25,16 @@
     "description": "Resposta rápida para todas as suas solicitações."
   },
   {
+    "icon": "express",
+    "title": "Express",
+    "description": "Resposta rápida para todas as suas solicitações."
+  },
+  {
+    "icon": "github",
+    "title": "GitHub",
+    "description": "Resposta rápida para todas as suas solicitações."
+  },
+  {
     "icon": "tailwind",
     "title": "Tailwind",
     "description": "Suporte completo para serviços em cloud."

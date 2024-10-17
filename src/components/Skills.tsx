@@ -25,6 +25,7 @@ import {
 } from 'react-icons/ri'
 
 import { BiLogoTypescript } from 'react-icons/bi'
+import { SiExpress } from 'react-icons/si'
 
 import featuresData from '@/data/teste.json' // Importa o JSON
 import Section from '@/components/Section'
@@ -43,8 +44,9 @@ const iconMap: { [key: string]: React.ElementType } = {
   react: FaReact,
   typescript: BiLogoTypescript,
   next: RiNextjsFill,
-  speed: FaTachometerAlt,
+  express: SiExpress,
   tailwind: RiTailwindCssFill,
+  github: FaGithub,
 }
 
 // Componente usando arrow function sem FC
