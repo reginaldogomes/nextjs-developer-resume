@@ -38,5 +38,10 @@
     "icon": "tailwind",
     "title": "Tailwind",
     "description": "Suporte completo para serviços em cloud."
+  },
+  {
+    "icon": "tailwind",
+    "title": "React Native",
+    "description": "Suporte completo para serviços em cloud."
   }
 ]
