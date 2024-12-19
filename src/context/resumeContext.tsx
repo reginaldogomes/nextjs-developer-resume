@@ -30,7 +30,7 @@ const initialProfile: Profile = {
   name: 'Reginaldo Gomes',
   title: 'Analista Desenvolvedor Front-end',
   description:
-    'Desenvolvedor Front-End com sólida experiência em JavaScript, especializado em React.js e Next.js para o desenvolvimento de interfaces modernas, dinâmicas e escaláveis. Atuo de forma consistente em ambientes de cloud computing, com foco em AWS, e aplico boas práticas de DevOps para automação e gerenciamento eficiente de infraestrutura.',
+    'Desenvolvedor Front-End com ampla experiência em JavaScript, especializado em React, Next.js e Angular para a criação de interfaces modernas, dinâmicas e escaláveis. Possuo sólidos conhecimentos em TypeScript e Node.js, permitindo o desenvolvimento de aplicações completas, desde o front-end até o back-end, com foco em performance e qualidade. Atuo também em ambientes de cloud computing, com experiência em AWS e Azure, aplicando práticas de DevOps para automação de processos e gerenciamento eficiente de infraestrutura. Além disso, tenho conhecimentos em cibersegurança, integrando medidas preventivas e corretivas ao longo de todo o ciclo de desenvolvimento para garantir a segurança e a integridade das aplicações. Sou comprometido em entregar soluções inovadoras e robustas, sempre alinhadas às melhores práticas do mercado, buscando constantemente aprimorar minhas habilidades e contribuir para o sucesso dos projetos em que atuo.',
   experience: [
     {
       role: 'Web Development Analyst',
