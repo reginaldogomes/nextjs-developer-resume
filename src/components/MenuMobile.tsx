@@ -13,10 +13,16 @@ const menuItems = [
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+  const closeMenu = () => setIsOpen(false)
+
   return (
     <>
       {/* Botão para abrir o menu */}
-      <Button onClick={() => setIsOpen(true)} variant="outline">
+      <Button
+        onClick={() => setIsOpen(true)}
+        variant="outline"
+        className="transition-all hover:bg-blue-600 hover:text-white"
+      >
         Abrir Menu
       </Button>
 
@@ -37,7 +43,8 @@ const MobileMenu = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="text-lg font-medium text-white hover:text-blue-300"
+                  onClick={closeMenu}
+                  className="text-lg font-medium text-white px-4 py-2 rounded-md transition-all hover:bg-blue-600 hover:text-white"
                 >
                   {label}
                 </Link>
@@ -46,9 +53,9 @@ const MobileMenu = () => {
 
             {/* Botão para fechar o menu */}
             <Button
-              onClick={() => setIsOpen(false)}
+              onClick={closeMenu}
               variant="destructive"
-              className="mt-6"
+              className="mt-6 transition-all hover:bg-red-600 hover:text-white"
             >
               Fechar Menu
             </Button>
