@@ -1,37 +1,55 @@
-interface MobileMenuProps {
-  isOpen: boolean
-}
+import { useState } from 'react'
+import { Button } from '@/components/ui/button'
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogClose,
+} from '@/components/ui/dialog'
+import Link from 'next/link'
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
+const menuItems = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/contact', label: 'Contact' },
+]
+
+const MobileMenu = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    <div className={`md:hidden ${isOpen ? '' : 'hidden'}`}>
-      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a
-          href="/"
-          className="block text-white bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
-        >
-          Home
-        </a>
-        <a
-          href="/about"
-          className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
-        >
-          About
-        </a>
-        <a
-          href="/services"
-          className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
-        >
-          Services
-        </a>
-        <a
-          href="/contact"
-          className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
-        >
-          Contact
-        </a>
-      </div>
-    </div>
+    <>
+      {/* Botão para abrir o modal */}
+      <Button onClick={() => setIsOpen(true)} variant="outline">
+        Abrir Menu
+      </Button>
+
+      {/* Modal do menu */}
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent className="max-w-md w-full">
+          <DialogHeader>
+            <DialogTitle>Menu</DialogTitle>
+          </DialogHeader>
+          <div className="flex flex-col gap-3">
+            {menuItems.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+          {/* Botão de ação */}
+          <DialogClose asChild>
+            <Button variant="destructive">Fechar Menu</Button>
+          </DialogClose>
+        </DialogContent>
+      </Dialog>
+    </>
   )
 }
 
