@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt" className={nunito.className}>
-      <body className="flex-col">
+    <html lang="pt" className="dark">
+      <body className="flex-col dark">
         <ProfileProvider>
           <Header />
           <Main>{children}</Main>

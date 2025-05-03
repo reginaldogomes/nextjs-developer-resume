@@ -6,8 +6,9 @@ import { Loading } from './shared/Loading'
 
 const menuItems = [
   { href: '/', label: 'Home' },
+  { href: '/resume', label: 'Resume' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
+  { href: '/solutions', label: 'Solutions' },
   { href: '/contact', label: 'Contact' },
 ]
 
