@@ -12,7 +12,7 @@ export const Hero = () => {
       <p className="text-2xl text-center">{profile.description}</p>
       <Button
         variant="secondary"
-        className="mx-auto bg-blue-600 text-white text-2xl p-4"
+        className="mx-auto bg-primary text-white text-2xl p-4"
       >
         Sobre Mim
       </Button>
