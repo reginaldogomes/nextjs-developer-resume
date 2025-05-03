@@ -1,6 +1,5 @@
 'use client'
 import MenuMobile from '../MenuMobile'
-import Navbar from './Navbar'
 import { useProfile } from '@/context/resumeContext'
 
 export const Header = () => {

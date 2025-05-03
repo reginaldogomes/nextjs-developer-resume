@@ -12,12 +12,18 @@ const menuItems = [
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  const closeMenu = () => setIsOpen(false)
+  const handleLinkClick = () => {
+    setIsLoading(true)
+    setTimeout(() => {
+      setIsOpen(false)
+      setIsLoading(false)
+    }, 1500) // Simula carregamento de 1.5 segundos
+  }
 
   return (
     <>
-      {/* Botão para abrir o menu */}
       <Button
         onClick={() => setIsOpen(true)}
         variant="outline"
@@ -26,7 +32,6 @@ const MobileMenu = () => {
         Abrir Menu
       </Button>
 
-      {/* Menu Mobile Customizado */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -43,7 +48,7 @@ const MobileMenu = () => {
                 <Link
                   key={href}
                   href={href}
-                  onClick={closeMenu}
+                  onClick={handleLinkClick}
                   className="text-lg font-medium text-white px-4 py-2 rounded-md transition-all hover:bg-blue-600 hover:text-white"
                 >
                   {label}
@@ -51,9 +56,21 @@ const MobileMenu = () => {
               ))}
             </nav>
 
-            {/* Botão para fechar o menu */}
+            {/* Loader visual para transição */}
+            {isLoading && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-white mt-4 text-lg"
+              >
+                Carregando...
+              </motion.div>
+            )}
+
             <Button
-              onClick={closeMenu}
+              onClick={() => setIsOpen(false)}
               variant="destructive"
               className="mt-6 transition-all hover:bg-red-600 hover:text-white"
             >
