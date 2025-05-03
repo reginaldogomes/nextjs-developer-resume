@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Loading } from './shared/Loading'
 
 const menuItems = [
   { href: '/', label: 'Home' },
@@ -65,7 +66,7 @@ const MobileMenu = () => {
                 transition={{ duration: 0.5 }}
                 className="text-white mt-4 text-lg"
               >
-                Carregando...
+                <Loading />
               </motion.div>
             )}
 
