@@ -16,7 +16,7 @@ const userData = {
   ],
   competencias: [
     '🚀 React & Next.js',
-    '🎨 Tailwind CSS',
+    '🎨 Tailwind CSS & Shadcn UI',
     '⚙️ Git & CI/CD',
     '📦 Node.js & MongoDB',
   ],
