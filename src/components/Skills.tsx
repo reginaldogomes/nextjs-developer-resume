@@ -64,7 +64,7 @@ const FeatureList = () => (
             <div className="flex justify-center mb-4">
               <Icon className="h-12 w-12 text-blue-600" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">{title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-black">{title}</h3>
           </div>
         )
       })}
