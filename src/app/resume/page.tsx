@@ -4,15 +4,16 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 const userData = {
-  nome: 'João da Silva',
+  nome: 'Reginaldo Gomes',
   cargo: 'Desenvolvedor Front-end',
   resumo:
     'Desenvolvedor apaixonado por tecnologia, com experiência em criação de aplicações modernas e responsivas.',
   objetivo:
     'Busco desafios que me permitam evoluir e contribuir com soluções eficientes em tecnologia.',
   experiencia: [
-    '💼 Desenvolvedor Front-end - Empresa XYZ (2021 - Atual)',
-    '💼 Estagiário em Desenvolvimento Web - Startup ABC (2019 - 2021)',
+    'Analista Desenvolvedor Front-end - BH Solutions (2023 - Atual)',
+    'Analista Desenvolvedor Front-end - Locaweb (2022 - 2023)',
+    'Analista Desenvolvedor Web - Itatiaia (2021 - 2022)',
   ],
   competencias: [
     '🚀 React & Next.js',
@@ -32,7 +33,7 @@ const Page = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <CardHeader className="text-center mb-6">
-          <CardTitle className="text-3xl font-bold text-gray-900">
+          <CardTitle className="text-3xl font-bold text-gray-100">
             {userData.nome}
           </CardTitle>
           <p className="text-gray-500 text-lg">{userData.cargo}</p>
