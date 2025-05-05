@@ -33,7 +33,7 @@ const Page = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <CardHeader className="text-center mb-6">
-          <CardTitle className="text-3xl font-bold text-gray-900">
+          <CardTitle className="text-3xl font-bold text-gray-100">
             {userData.nome}
           </CardTitle>
           <p className="text-gray-500 text-lg">{userData.cargo}</p>
