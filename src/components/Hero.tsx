@@ -1,7 +1,7 @@
 'use client'
 import Section from '@/components/Section'
-import { Button } from '@/components/ui/button'
 import { useProfile } from '@/context/resumeContext'
+import Link from 'next/link'
 
 export const Hero = () => {
   const { profile } = useProfile()
@@ -10,12 +10,12 @@ export const Hero = () => {
     <Section>
       <h1 className="text-4xl text-center lg:text-5xl">{profile.title}</h1>
       <p className="text-2xl text-center">{profile.description}</p>
-      <Button
-        variant="secondary"
+      <Link
+        href="/about"
         className="mx-auto bg-primary text-white text-2xl p-4"
       >
         Sobre Mim
-      </Button>
+      </Link>
     </Section>
   )
 }
