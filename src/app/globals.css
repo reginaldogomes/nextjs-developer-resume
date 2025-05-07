@@ -3,7 +3,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: var(--font-nunito);
+  --font-nunito: var(--font-nunito);
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));

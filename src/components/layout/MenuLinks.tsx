@@ -4,11 +4,10 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 const menuItems = [
-  { href: '/', label: 'Home' },
-  { href: '/resume', label: 'Resume' },
-  { href: '/about', label: 'About' },
-  { href: '/solutions', label: 'Solutions' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/resume', label: 'Currículo' },
+  { href: '/about', label: 'Sobre' },
+  { href: '/solutions', label: 'Serviços' },
+  { href: '/contact', label: 'Contato' },
 ]
 
 const MenuLinks = ({ handleLinkClick }: { handleLinkClick?: () => void }) => {

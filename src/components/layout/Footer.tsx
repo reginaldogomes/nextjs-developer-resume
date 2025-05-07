@@ -1,15 +1,20 @@
 import SocialLinks from '@/components/SocialLinks'
 
-export const Footer = () => {
-  const currentYear = new Date().getFullYear()
-  return (
-    <footer className="flex flex-col justify-center items-center bg-primary-foreground p-16">
-      <div className="flex flex-col justify-center w-full items-center lg:w-[1024px] gap-8">
-        <SocialLinks />
-        <p className="text-center text-black">
-          © {currentYear} Reginaldo Gomes. Todos os direitos reservados
-        </p>
-      </div>
-    </footer>
-  )
+const footerData = {
+  year: new Date().getFullYear(),
+  owner: 'Reginaldo Gomes',
+  message: 'Todos os direitos reservados',
 }
+
+export const Footer = () => (
+  <footer className="flex flex-col justify-center items-center bg-accent p-8">
+    <div className="flex flex-col items-center w-full max-w-screen-lg gap-6">
+      <SocialLinks />
+      <p className="text-center text-black">
+        © {footerData.year} {footerData.owner}. {footerData.message}
+      </p>
+    </div>
+  </footer>
+)
+
+export default Footer
