@@ -1,4 +1,4 @@
-import { Main } from '@/components/Main'
+import { Main } from '@/components/layout/Main'
 import { Hero } from '@/components/Hero'
 import FeatureList from '@/components/Skills'
 

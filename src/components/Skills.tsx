@@ -28,7 +28,7 @@ import { BiLogoTypescript } from 'react-icons/bi'
 import { SiExpress } from 'react-icons/si'
 
 import featuresData from '@/data/teste.json' // Importa o JSON
-import Section from '@/components/Section'
+import Section from '@/components/layout/Section'
 
 // Tipo para os dados do JSON
 interface Feature {

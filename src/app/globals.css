@@ -33,12 +33,6 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
 
-  --color-chart-1: hsl(var(--chart-1));
-  --color-chart-2: hsl(var(--chart-2));
-  --color-chart-3: hsl(var(--chart-3));
-  --color-chart-4: hsl(var(--chart-4));
-  --color-chart-5: hsl(var(--chart-5));
-
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
@@ -59,52 +53,31 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 220 80% 60%; /* Azul vibrante */
+    --primary: 220 80% 60%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 280 65% 60%; /* Roxo tech */
+    --secondary: 280 65% 60%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 5% 85%;
     --muted-foreground: 240 5% 50%;
-    --accent: 160 60% 45%; /* Verde tech */
+    --accent: 48 100% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5% 85%;
     --input: 240 5% 85%;
     --ring: 240 80% 60%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 220 13% 10%; /* Grafite escuro */
-    --foreground: 210 20% 95%;
-    --card: 220 13% 10%;
-    --card-foreground: 210 20% 95%;
-    --popover: 220 13% 10%;
-    --popover-foreground: 210 20% 95%;
-    --primary: 220 80% 60%; /* Azul vibrante */
-    --primary-foreground: 0 0% 100%;
-    --secondary: 280 65% 60%; /* Roxo tech */
-    --secondary-foreground: 0 0% 100%;
-    --muted: 220 8% 20%;
-    --muted-foreground: 220 10% 60%;
-    --accent: 160 60% 45%; /* Verde tech */
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 40.6%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 220 10% 25%;
-    --input: 220 10% 25%;
-    --ring: 220 80% 60%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --color-background: #0e1117;
+    --color-foreground: #e5e7eb;
+    --color-primary: #3b82f6;
+    --color-secondary: #fdc700;
+    --color-accent: #7c3aed;
+    --color-muted: #6b7280;
+    --color-border: #1f2937;
+    --color-card: #1f2937;
   }
 }
 

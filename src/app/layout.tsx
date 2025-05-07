@@ -2,9 +2,9 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import type { Metadata } from 'next'
 import './globals.css'
 import { Nunito } from 'next/font/google'
-import { Header } from '@/components/template/Header'
-import { Footer } from '@/components/template/Footer'
-import { Main } from '@/components/Main'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
+import { Main } from '@/components/layout/Main'
 import { ProfileProvider } from '@/context/resumeContext'
 
 export const metadata: Metadata = {

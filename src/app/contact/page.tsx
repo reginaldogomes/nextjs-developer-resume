@@ -1,5 +1,5 @@
 import { FormHTML } from '@/components/FormHTML'
-import { Main } from '@/components/Main'
+import { Main } from '@/components/layout/Main'
 import { SendPulse } from '@/components/SendPulse'
 import React from 'react'
 
