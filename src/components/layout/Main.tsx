@@ -6,7 +6,7 @@ interface MainProps {
 
 export const Main = ({ children }: MainProps) => {
   return (
-    <main className="flex flex-col p-4 justify-center w-full items-center">
+    <main className="flex flex-col justify-center w-full items-center bg-background">
       {children}
     </main>
   )

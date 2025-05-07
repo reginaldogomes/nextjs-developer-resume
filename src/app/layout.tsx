@@ -2,10 +2,12 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import type { Metadata } from 'next'
 import './globals.css'
 import { Nunito } from 'next/font/google'
-import { Header } from '@/components/template/Header'
-import { Footer } from '@/components/template/Footer'
-import { Main } from '@/components/Main'
-import { ProfileProvider } from '@/context/resumeContext'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
+import { Main } from '@/components/layout/Main'
+import FloatingButton from '@/components/FloatingButton'
+import { DefaultSeo } from 'next-seo'
+import defaultSEOConfig from '../../next-seo.config'
 
 export const metadata: Metadata = {
   title: 'Reginaldo Gomes - Analista Desenvolvedor Front-end',
@@ -15,7 +17,9 @@ export const metadata: Metadata = {
 
 const nunito = Nunito({
   subsets: ['latin'],
+  display: 'swap',
   variable: '--font-nunito',
+  weight: ['400', '700'],
 })
 
 export default function RootLayout({
@@ -24,13 +28,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt" className="dark">
-      <body className="flex-col dark">
-        <ProfileProvider>
-          <Header />
-          <Main>{children}</Main>
-          <Footer />
-        </ProfileProvider>
+    <html lang="pt-BR">
+      <body className="flex-col dark font-nunito">
+        <Header />
+        <Main>{children}</Main>
+        <Footer />
+        <FloatingButton />
         <GoogleAnalytics />
       </body>
     </html>
