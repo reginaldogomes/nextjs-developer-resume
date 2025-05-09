@@ -6,7 +6,7 @@ interface PageHeadProps {
 }
 
 const PageHead: React.FC<PageHeadProps> = ({ title, description }) => (
-  <div className="w-full p-8 text-center shadow-md bg-accent/20 text-white">
+  <div className="w-full p-8 text-center shadow-md bg-accent/5 text-white">
     {/* Título */}
     <h1 className="text-3xl font-bold">{title}</h1>
 

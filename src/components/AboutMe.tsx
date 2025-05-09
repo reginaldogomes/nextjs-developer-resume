@@ -20,7 +20,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
 }) => (
   <section className="w-full py-16 px-6 bg-gray-800 text-white flex flex-col items-center text-center md:flex-row md:text-left md:gap-8 md:items-start">
     {/* Ícone opcional */}
-    <div className="text-4xl text-blue-400">{icon || <FaUserTie />}</div>
+    <div className="text-4xl text-accent">{icon || <FaUserTie />}</div>
 
     {/* Conteúdo */}
     <div className="max-w-xl">
@@ -30,7 +30,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
       {/* Botão opcional */}
       {buttonText && buttonLink && (
         <Button
-          className="mt-6 bg-blue-500 text-white hover:bg-blue-600 transition"
+          className="mt-6 bg-accent text-white hover:bg-blue-600 transition"
           asChild
         >
           <a href={buttonLink}>{buttonText}</a>

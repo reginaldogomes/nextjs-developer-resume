@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import PageHead from '@/components/layout/PageHead'
 import { Main } from '@/components/layout/Main'
+import { CustomLink } from '@/components/Link'
 
 const userData = {
   nome: 'Reginaldo Gomes',
@@ -86,9 +87,12 @@ const Page = () => (
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          <Button className="bg-gray-800 text-gray-100 px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-all">
+          {/* <Button className="bg-gray-800 text-gray-100 px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-all">
             Baixar Currículo
-          </Button>
+          </Button> */}
+          <CustomLink href="/dashboard" style="background">
+            Baixar Currículo
+          </CustomLink>
         </motion.div>
       </motion.div>
     </div>

@@ -53,7 +53,9 @@ const Hero: React.FC<HeroProps> = ({
         {ctaLinks.slice(0, 2).map((cta, index) => (
           <motion.div key={index} whileHover={{ scale: 1.1 }}>
             <Link href={cta.url} passHref>
-              <Button className="px-6 py-3 text-lg">{cta.label}</Button>
+              <Button className="bg-accent px-6 py-3 text-lg">
+                {cta.label}
+              </Button>
             </Link>
           </motion.div>
         ))}
