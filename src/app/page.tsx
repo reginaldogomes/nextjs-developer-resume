@@ -1,7 +1,6 @@
 import { Main } from '@/components/layout/Main'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
-import ServicesSection from '@/components/ServiceSection'
 
 export default function Home() {
   return (
@@ -23,7 +22,12 @@ export default function Home() {
         buttonText="Saiba mais"
         buttonLink="/sobre"
       />
-      <ServicesSection />
+      <AboutMe
+        title="Currículo"
+        description="Minha trajetória como desenvolvedor: habilidades, experiências e certificações."
+        buttonText="Ver detalhes"
+        buttonLink="/curriculo"
+      />
     </Main>
   )
 }
