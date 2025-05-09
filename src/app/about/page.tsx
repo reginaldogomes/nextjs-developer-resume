@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <>
       {/* SEO otimizado */}
-      <NextSeo
+      {/* <NextSeo
         title="Sobre nós"
         description="Conheça nossa missão, visão e valores."
         canonical="https://www.seusite.com.br/sobre"
@@ -41,7 +41,7 @@ export default function Page() {
             },
           ],
         }}
-      />
+      /> */}
 
       {/* Layout principal */}
       <Main>
