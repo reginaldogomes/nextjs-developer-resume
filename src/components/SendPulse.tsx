@@ -1,70 +1,92 @@
-'use client'
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+// components/ContactForm.tsx
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { contactSchema } from '../schemas/contactSchema'
+import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { useCreateContact } from '../hooks/useContacts'
 
-export const SendPulse = () => {
-  const [message, setMessage] = useState('')
+interface ContactFormData {
+  First_Name: string
+  Last_Name: string
+  Email: string
+}
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setMessage('Inscrição realizada com sucesso!')
-  }
+export default function ContactForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema),
+  })
+
+  const { mutate, isLoading } = useCreateContact()
+
+  const onSubmit = (data: ContactFormData) => mutate(data)
 
   return (
-    <Card className="w-full max-w-xl p-6 shadow-xl border border-gray-800 bg-gray-800">
-      <CardHeader>
-        <CardTitle className="text-center text-2xl font-bold text-yellow-400">
-          Entre em contato
-        </CardTitle>
-        <p className="text-center text-sm text-gray-400">
-          Assine nossa newsletter para receber novidades!
-        </p>
-      </CardHeader>
-      <CardContent>
-        <form
-          action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo5MDYwNDI4LCJhZGRyZXNzX2Jvb2tfaWQiOjIwODcxOSwibGFuZyI6InB0LWJyIn0="
-          method="post"
-          onSubmit={handleSubmit}
-          className="space-y-4"
+    <Card className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        {/* Nome */}
+        <div>
+          <label htmlFor="First_Name" className="block text-gray-700">
+            Nome:
+          </label>
+          <Input
+            id="First_Name"
+            aria-label="Nome"
+            {...register('First_Name')}
+            className="w-full"
+          />
+          {errors.First_Name && (
+            <p className="text-red-500 text-sm">{errors.First_Name.message}</p>
+          )}
+        </div>
+
+        {/* Sobrenome */}
+        <div>
+          <label htmlFor="Last_Name" className="block text-gray-700">
+            Sobrenome:
+          </label>
+          <Input
+            id="Last_Name"
+            aria-label="Sobrenome"
+            {...register('Last_Name')}
+            className="w-full"
+          />
+          {errors.Last_Name && (
+            <p className="text-red-500 text-sm">{errors.Last_Name.message}</p>
+          )}
+        </div>
+
+        {/* Email */}
+        <div>
+          <label htmlFor="Email" className="block text-gray-700">
+            Email:
+          </label>
+          <Input
+            id="Email"
+            aria-label="Email"
+            type="email"
+            {...register('Email')}
+            className="w-full"
+          />
+          {errors.Email && (
+            <p className="text-red-500 text-sm">{errors.Email.message}</p>
+          )}
+        </div>
+
+        {/* Botão de envio */}
+        <Button
+          type="submit"
+          className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+          disabled={isLoading}
         >
-          <div>
-            <Label htmlFor="name" className="text-yellow-400">
-              Nome
-            </Label>
-            <Input
-              type="text"
-              name="name"
-              required
-              className="mt-1 border-none bg-gray-700 text-white"
-            />
-          </div>
-          <div>
-            <Label htmlFor="email" className="text-yellow-400">
-              E-mail
-            </Label>
-            <Input
-              type="email"
-              required
-              name="email"
-              className="mt-1 border-none bg-gray-700 text-white"
-            />
-          </div>
-          <Button
-            type="submit"
-            className="w-full bg-yellow-400 text-black font-bold hover:bg-yellow-500"
-          >
-            Assinar
-          </Button>
-        </form>
-        {message && (
-          <div className="mt-4 text-center text-yellow-400 font-medium">
-            {message}
-          </div>
-        )}
-      </CardContent>
+          {isLoading ? 'Criando...' : 'Criar Contato'}
+        </Button>
+      </form>
     </Card>
   )
 }

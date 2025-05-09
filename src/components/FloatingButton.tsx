@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const FloatingButton: React.FC = () => (
   <motion.div
-    className="fixed bottom-6 right-6 flex items-center justify-center w-14 h-14 bg-accent text-white rounded-full shadow-lg hover:bg-blue-600 transition"
+    className="fixed bottom-6 right-6 flex items-center justify-center w-14 h-14 bg-accent text-white rounded-full shadow-lg hover:bg-accent/85 transition"
     whileHover={{ scale: 1.2 }}
     whileTap={{ scale: 0.9 }}
     initial={{ opacity: 0, y: 30 }}

@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${lexend.className} bg-background dark`}>
+      <body className={`${lexend.className} dark`}>
         <Header />
         <Main>{children}</Main>
         <Footer />

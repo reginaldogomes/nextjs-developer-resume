@@ -1,7 +1,6 @@
 import { Main } from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
-import { SendPulse } from '@/components/SendPulse'
 
 function ContactPage() {
   return (
@@ -37,9 +36,7 @@ function ContactPage() {
         </div>
 
         {/* Formulário de contato */}
-        <div className="mt-8">
-          <SendPulse />
-        </div>
+        <div className="mt-8">teste</div>
       </div>
     </Main>
   )

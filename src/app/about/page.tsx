@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Main } from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import About from '@/components/About'
 
 const userData = {
   about:
@@ -22,6 +23,26 @@ const sections = [
 export default function Page() {
   return (
     <>
+      {/* SEO otimizado */}
+      <NextSeo
+        title="Sobre nós"
+        description="Conheça nossa missão, visão e valores."
+        canonical="https://www.seusite.com.br/sobre"
+        openGraph={{
+          url: 'https://www.seusite.com.br/sobre',
+          title: 'Sobre nós - Nome da Marca',
+          description: 'Conheça nossa missão, visão e valores.',
+          images: [
+            {
+              url: 'https://www.seusite.com.br/sobre-og.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Imagem sobre nós',
+            },
+          ],
+        }}
+      />
+
       {/* Layout principal */}
       <Main>
         <PageHead
@@ -36,25 +57,7 @@ export default function Page() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {/* Blocos de conteúdo */}
-          {sections.map(({ title, content }, index) => (
-            <motion.div
-              key={title}
-              className="w-full max-w-3xl"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.2 }}
-            >
-              <Card>
-                <CardHeader>
-                  <CardTitle>{title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg">{content}</p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+          <About />
         </motion.div>
       </Main>
     </>
