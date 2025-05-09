@@ -2,6 +2,7 @@ import { Main } from '@/components/layout/Main'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
 import Section from '@/components/layout/Section'
+import Services from '@/components/Services'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
           buttonLink="/resume"
         />
       </Section>
+      <Services />
     </Main>
   )
 }
