@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({
     }}
   >
     {/* Overlay */}
-    <div className="absolute inset-0 bg-accent/60"></div>
+    <div className="absolute inset-0 bg-accent/85"></div>
 
     {/* Conteúdo Animado */}
     <motion.div

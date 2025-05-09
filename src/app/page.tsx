@@ -1,5 +1,7 @@
 import { Main } from '@/components/layout/Main'
 import Hero from '@/components/Hero'
+import AboutMe from '@/components/AboutMe'
+import ServicesSection from '@/components/ServiceSection'
 
 export default function Home() {
   return (
@@ -15,6 +17,13 @@ export default function Home() {
           { label: '📎 Ver projetos', url: '/projetos' },
         ]}
       />
+      <AboutMe
+        title="Sobre Mim"
+        description="Mais do que código, entrego estratégia digital com impacto nos resultados do cliente."
+        buttonText="Saiba mais"
+        buttonLink="/sobre"
+      />
+      <ServicesSection />
     </Main>
   )
 }
