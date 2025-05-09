@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.seusite.com.br
+
+# Sitemaps
+Sitemap: https://www.seusite.com.br/sitemap.xml

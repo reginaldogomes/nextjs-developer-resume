@@ -29,7 +29,7 @@ function SocialLinks() {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-2xl text-blue-500 hover:text-blue-700 transition-colors"
+          className="text-4xl text-accent hover:text-accent/85 transition-colors"
           aria-label={link.name}
         >
           {link.icon}

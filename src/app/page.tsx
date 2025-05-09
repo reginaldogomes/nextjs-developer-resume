@@ -1,5 +1,6 @@
 import { Main } from '@/components/layout/Main'
 import Hero from '@/components/Hero'
+import AboutMe from '@/components/AboutMe'
 
 export default function Home() {
   return (
@@ -14,6 +15,18 @@ export default function Home() {
           { label: '📁 Baixar CV', url: '/cv.pdf' },
           { label: '📎 Ver projetos', url: '/projetos' },
         ]}
+      />
+      <AboutMe
+        title="Sobre Mim"
+        description="Mais do que código, entrego estratégia digital com impacto nos resultados do cliente."
+        buttonText="Saiba mais"
+        buttonLink="/sobre"
+      />
+      <AboutMe
+        title="Currículo"
+        description="Minha trajetória como desenvolvedor: habilidades, experiências e certificações."
+        buttonText="Ver detalhes"
+        buttonLink="/curriculo"
       />
     </Main>
   )
