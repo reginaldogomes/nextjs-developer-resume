@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import PageHead from '@/components/layout/PageHead'
 import { Main } from '@/components/layout/Main'
 import { CustomLink } from '@/components/Link'
