@@ -3,12 +3,11 @@ module.exports = {
     {
       name: 'reginaldogomes.dev.br',
       cwd: '/home/ubuntu/apps/reginaldogomes.dev.br',
-      script: './node_modules/next/dist/bin/next', // 1️⃣ Caminho direto
-      args: 'start', // 2️⃣ Sem porta aqui (usamos no env)
-      interpreter: 'node', // 3️⃣ Usa Node.js normalmente
+      script: './node_modules/.bin/next',
+      args: 'start -p 3003', // Use a porta diretamente aqui
+      interpreter: '/bin/bash', // ⬅️ Usa o bash para rodar comandos do npm/next
       env: {
         NODE_ENV: 'production',
-        PORT: 3000, // 4️⃣ Porta definida aqui
       },
     },
   ],
