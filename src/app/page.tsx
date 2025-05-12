@@ -15,7 +15,7 @@ const aboutMeCards = [
   {
     title: 'Currículo',
     description:
-      'Minha trajetória profissional envolve desenvolvimento, inovação digital e projetos com foco em tecnologia, resultados e transformação real.',
+      'Minha trajetória inclui ampla atuação corporativa em projetos de tecnologia, destacando competências técnicas e foco em inovação estratégica.',
     buttonText: 'Ver detalhes',
     buttonLink: '/resume',
   },
