@@ -20,7 +20,6 @@ const sections = [
 export default function Page() {
   return (
     <>
-      {/* Layout principal */}
       <Main>
         <PageHead
           title="Sobre"

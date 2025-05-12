@@ -5,7 +5,6 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 function ContactPage() {
   return (
     <Main>
-      {/* Cabeçalho da página */}
       <PageHead
         title="Contato"
         description="Entre em contato comigo por telefone, e-mail ou visite Belo Horizonte."
