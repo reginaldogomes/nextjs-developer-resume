@@ -1,5 +1,5 @@
 // components/SocialLinks.tsx
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 interface SocialLink {
   name: string
@@ -17,6 +17,11 @@ const socialLinks: SocialLink[] = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/reginaldogomesalves/',
     icon: <FaLinkedin />,
+  },
+  {
+    name: 'GitHub',
+    url: 'https://www.github.com/reginaldogomesalves/',
+    icon: <FaGithub />,
   },
 ]
 
