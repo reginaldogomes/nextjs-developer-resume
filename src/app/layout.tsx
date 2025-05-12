@@ -6,8 +6,6 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Main } from '@/components/layout/Main'
 import FloatingButton from '@/components/FloatingButton'
-import { DefaultSeo } from 'next-seo'
-import defaultSEOConfig from '../../next-seo.config'
 
 export const metadata: Metadata = {
   title: 'Reginaldo Gomes - Analista Desenvolvedor Front-end',
