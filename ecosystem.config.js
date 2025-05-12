@@ -3,9 +3,9 @@ module.exports = {
     {
       name: 'reginaldogomes.dev.br',
       cwd: '/home/ubuntu/apps/reginaldogomes.dev.br',
-      script: 'node_modules/next/dist/bin/next', // Caminho direto para o binário Next.js
-      args: 'start -p 3003', // Porta atualizada
-      interpreter: 'node',
+      script: './node_modules/.bin/next', // Caminho recomendado e seguro
+      args: 'start -p 3003',
+      interpreter: '/bin/bash',
       instances: 'max',
       exec_mode: 'cluster',
       watch: false,
