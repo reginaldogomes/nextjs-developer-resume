@@ -1,8 +1,25 @@
 import { Main } from '@/components/layout/Main'
 import Hero from '@/components/Hero'
-import AboutMe from '@/components/AboutMe'
+import AboutMe from '@/components/Widget'
 import Section from '@/components/layout/Section'
 import Services from '@/components/Services'
+
+const aboutMeCards = [
+  {
+    title: 'Sobre Mim',
+    description:
+      'Mais do que escrever códigos, ofereço soluções digitais estratégicas que geram valor real e resultados concretos para empresas e clientes.',
+    buttonText: 'Saiba mais',
+    buttonLink: '/about',
+  },
+  {
+    title: 'Currículo',
+    description:
+      'Minha trajetória inclui ampla atuação corporativa em projetos de tecnologia, destacando competências técnicas e foco em inovação estratégica.',
+    buttonText: 'Ver detalhes',
+    buttonLink: '/resume',
+  },
+]
 
 export default function Home() {
   return (
@@ -19,18 +36,15 @@ export default function Home() {
         ]}
       />
       <Section className="flex-row">
-        <AboutMe
-          title="Sobre Mim"
-          description="Mais do que código, entrego estratégia digital com impacto nos resultados do cliente."
-          buttonText="Saiba mais"
-          buttonLink="/about"
-        />
-        <AboutMe
-          title="Currículo"
-          description="Minha trajetória como desenvolvedor: habilidades, experiências e certificações."
-          buttonText="Ver detalhes"
-          buttonLink="/resume"
-        />
+        {aboutMeCards.map((card, index) => (
+          <AboutMe
+            key={index}
+            title={card.title}
+            description={card.description}
+            buttonText={card.buttonText}
+            buttonLink={card.buttonLink}
+          />
+        ))}
       </Section>
       <Services />
     </Main>

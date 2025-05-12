@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="dark">
+      <body className="dark bg-surface">
         <Header />
         <Main>{children}</Main>
         <Footer />
