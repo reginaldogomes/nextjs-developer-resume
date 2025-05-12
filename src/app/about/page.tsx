@@ -1,6 +1,4 @@
 'use client'
-
-import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
 import { Main } from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
