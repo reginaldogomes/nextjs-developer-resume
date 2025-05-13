@@ -18,9 +18,9 @@ export function generateMetadata({
 
 export default function PageHead({ title, description }: PageHeadProps) {
   return (
-    <header className="w-full p-8 text-center shadow-md bg-accent/5 text-white">
+    <div className="w-full p-8 text-center shadow-md bg-accent/5 text-white">
       <h1 className="text-4xl font-bold">{title}</h1>
       {description && <p className="mt-2 text-5x1">{description}</p>}
-    </header>
+    </div>
   )
 }

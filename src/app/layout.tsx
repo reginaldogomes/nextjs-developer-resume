@@ -6,6 +6,8 @@ import { Footer } from '@/components/layout/Footer'
 import Main from '@/components/layout/Main'
 import FloatingButton from '@/components/FloatingButton'
 
+import { sourceCodePro } from './fonts'
+
 export const metadata: Metadata = {
   title: 'Reginaldo Gomes - Analista Desenvolvedor Front-end',
   description:
@@ -18,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className="dark bg-surface">
+    <html lang="pt-BR" className={`${sourceCodePro.variable}`}>
+      <body className="font-mono dark bg-surface">
         <Header />
         <Main>{children}</Main>
         <Footer />
