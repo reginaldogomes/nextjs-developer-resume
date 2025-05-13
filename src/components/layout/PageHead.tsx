@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Breadcrumb from './Breadcrumb'
 
 interface PageHeadProps {
   title: string
@@ -20,9 +19,8 @@ export function generateMetadata({
 export default function PageHead({ title, description }: PageHeadProps) {
   return (
     <header className="w-full p-8 text-center shadow-md bg-accent/5 text-white">
-      <Breadcrumb />
-      <h1 className="text-3xl font-bold">{title}</h1>
-      {description && <p className="mt-2 text-lg">{description}</p>}
+      <h1 className="text-4xl font-bold">{title}</h1>
+      {description && <p className="mt-2 text-5x1">{description}</p>}
     </header>
   )
 }
