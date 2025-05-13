@@ -1,4 +1,4 @@
-import { Main } from '@/components/layout/Main'
+import Main from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 

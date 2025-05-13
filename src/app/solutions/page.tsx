@@ -1,4 +1,4 @@
-import { Main } from '@/components/layout/Main'
+import Main from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
 import Services from '@/components/Services'
 import React from 'react'
