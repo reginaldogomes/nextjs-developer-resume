@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-import { Main } from '@/components/layout/Main'
+import Main from '@/components/layout/Main'
 import FloatingButton from '@/components/FloatingButton'
 
 export const metadata: Metadata = {

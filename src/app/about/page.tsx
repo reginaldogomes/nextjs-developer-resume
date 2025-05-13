@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Main } from '@/components/layout/Main'
+import Main from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
 
 const userData = {

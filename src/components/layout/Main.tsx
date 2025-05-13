@@ -1,13 +1,13 @@
-'use client' // Adicione esta diretiva se estiver usando Next.js App Router
+'use client'
 
 import { ReactNode } from 'react'
 
 interface MainProps {
   children?: ReactNode
-  className?: string // Prop opcional para classes adicionais
+  className?: string
 }
 
-export const Main = ({ children, className = '' }: MainProps) => {
+export default function Main({ children, className = '' }: MainProps) {
   return (
     <main
       className={`flex flex-col justify-center w-full items-center bg-background ${className}`}
@@ -16,6 +16,3 @@ export const Main = ({ children, className = '' }: MainProps) => {
     </main>
   )
 }
-
-// Exportação padrão para facilitar a importação
-export default Main
