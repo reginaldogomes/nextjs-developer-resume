@@ -68,20 +68,17 @@
   }
 
   .dark {
-    --color-background: #0d1117; /* Fundo principal – mais neutro e profundo */
-    --color-surface: #161b22; /* Fundo de seções e cartões – destaque sutil */
-    --color-border: #21262d; /* Divisores e bordas – discreto e funcional */
-
-    --color-foreground: #f0f3f7; /* Texto principal – mais claro e nítido */
-    --color-muted: #8b949e; /* Texto secundário – tom equilibrado */
-
-    --color-primary: #2f81f7; /* Azul profissional (ação principal) */
-    --color-secondary: #f4b400; /* Amarelo dourado (chamadas visuais) */
-    --color-accent: #a371f7; /* Roxo vibrante (estilo moderno) */
-
-    --color-success: #2ea043; /* Verde para mensagens positivas */
-    --color-danger: #f85149; /* Vermelho para alertas/erros */
-    --color-warning: #e3b341; /* Amarelo suave para atenção */
+    --color-background: #1a1a1a;
+    --color-surface: #2c2c2c;
+    --color-border: #3a3a3a;
+    --color-foreground: #f0f0f0;
+    --color-muted: #b0b0b0;
+    --color-primary: #004d61;
+    --color-secondary: #822659;
+    --color-accent: #3e5641;
+    --color-success: #2ea043;
+    --color-danger: #f85149;
+    --color-warning: #e3b341;
   }
 }
 
