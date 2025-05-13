@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import AboutMe from '@/components/Widget'
 import Section from '@/components/layout/Section'
 import Services from '@/components/Services'
+import Lead from '@/components/Lead'
 
 const aboutMeCards = [
   {
@@ -47,6 +48,7 @@ export default function Home() {
         ))}
       </Section>
       <Services />
+      <Lead />
     </Main>
   )
 }
