@@ -1,7 +1,7 @@
 'use client'
 
-import { FaUserTie } from 'react-icons/fa'
-import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 interface AboutMeProps {
   title: string
@@ -15,34 +15,37 @@ const AboutMe: React.FC<AboutMeProps> = ({
   title,
   description,
   icon,
-  buttonText,
-  buttonLink,
-}) => (
-  <section className="w-full py-16 px-6 bg-[#1c2129] text-foreground border border-border rounded-2xl shadow-lg">
-    <div className="container mx-auto flex flex-col items-center text-center md:flex-row md:text-left md:items-start md:gap-10">
-      {/* Ícone */}
-      <div className="text-5xl text-accent mb-6 md:mb-0 md:mt-2">
-        {icon || <FaUserTie />}
-      </div>
+  buttonText = 'Ver detalhes',
+  buttonLink = '#',
+}) => {
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="w-full p-6 rounded-2xl bg-zinc-800/80 text-zinc-200 backdrop-blur-sm shadow-lg flex flex-col justify-between transition hover:shadow-xl"
+    >
+      {/* Ícone dinâmico */}
+      <div className="mb-4">{icon}</div>
 
       {/* Conteúdo */}
-      <div className="max-w-2xl">
-        <h2 className="text-3xl font-semibold text-accent">{title}</h2>
-        <p className="mt-4 text-lg leading-relaxed text-[#c0cad4]">
-          {description}
-        </p>
-
-        {buttonText && buttonLink && (
-          <Button
-            className="mt-6 bg-accent text-white hover:brightness-110 transition duration-300"
-            asChild
-          >
-            <a href={buttonLink}>{buttonText}</a>
-          </Button>
-        )}
+      <div className="flex-1">
+        <h2 className="text-xl font-semibold text-purple-400 mb-2">{title}</h2>
+        <p className="text-sm leading-relaxed text-zinc-300">{description}</p>
       </div>
-    </div>
-  </section>
-)
+
+      {/* Botão */}
+      <div className="mt-6">
+        <Link
+          href={buttonLink}
+          className="inline-block px-4 py-2 rounded-md bg-purple-600 text-white text-sm font-medium hover:bg-purple-700 transition"
+        >
+          {buttonText}
+        </Link>
+      </div>
+    </motion.section>
+  )
+}
 
 export default AboutMe

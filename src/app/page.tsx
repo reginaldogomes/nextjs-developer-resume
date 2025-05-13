@@ -6,10 +6,10 @@ import Services from '@/components/Services'
 
 const aboutMeCards = [
   {
-    title: 'Sobre Mim',
+    title: 'Sobre',
     description:
       'Mais do que escrever códigos, ofereço soluções digitais estratégicas que geram valor real e resultados concretos para empresas e clientes.',
-    buttonText: 'Saiba mais',
+    buttonText: 'Ver detalhes',
     buttonLink: '/about',
   },
   {
