@@ -24,7 +24,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="w-full p-6 rounded-2xl bg-zinc-800/80 text-zinc-200 backdrop-blur-sm shadow-lg flex flex-col justify-between transition hover:shadow-xl"
+      className="w-full p-6 rounded-2xl text-zinc-200 backdrop-blur-sm shadow-lg flex flex-col justify-between transition hover:shadow-xl"
     >
       {/* Ícone dinâmico */}
       <div className="mb-4">{icon}</div>
@@ -39,7 +39,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
       <div className="mt-6">
         <Link
           href={buttonLink}
-          className="inline-block px-4 py-2 rounded-md bg-purple-600 text-white text-sm font-medium hover:bg-purple-700 transition"
+          className="inline-block px-4 py-2 rounded-md bg-accent text-white text-sm font-medium hover:bg-purple-700 transition"
         >
           {buttonText}
         </Link>

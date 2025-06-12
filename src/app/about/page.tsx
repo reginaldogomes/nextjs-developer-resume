@@ -5,7 +5,7 @@ import PageHead from '@/components/layout/PageHead'
 
 const userData = {
   about:
-    'Sou um Desenvolvedor Full-Stack Web com Especialização em Front-End, com mais de 15 anos de experiência no desenvolvimento de aplicações web. Minha atuação é focada na criação de interfaces de alto desempenho, garantindo responsividade, usabilidade e uma experiência aprimorada para o usuário.',
+    'Sou natural de Pirapora, Minas Gerais, e atualmente resido em Belo Horizonte. Tenho 45 anos e atuo na área de tecnologia há mais de duas décadas, com forte especialização em design de interfaces e desenvolvimento web. Atualmente, estou em processo de graduação em Gestão da Tecnologia da Informação, ampliando ainda mais minha visão estratégica sobre soluções digitais e infraestrutura tecnológica.',
   journey:
     'Minha trajetória começou há mais de 15 anos, quando me apaixonei pelo desenvolvimento web. Desde então, trabalhei em diversos projetos, adquirindo conhecimento em tecnologias modernas e metodologias ágeis. Minha especialidade é transformar ideias em interfaces intuitivas e de alto desempenho.',
 }

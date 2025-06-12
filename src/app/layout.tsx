@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${sourceCodePro.variable}`}>
-      <body className="font-mono dark bg-surface h-screen overflow-hidden">
+      <body className="font-mono dark bg-surface">
         <Header />
         <Main>{children}</Main>
         <Footer />
