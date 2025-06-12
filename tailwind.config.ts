@@ -5,7 +5,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        // nunito: ['var(--font-nunito)', 'sans-serif'],
+        mono: ['var(--font-source-code-pro)', 'monospace'],
+        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui'],
       },
     },
   },
