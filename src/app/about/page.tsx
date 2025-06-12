@@ -5,9 +5,9 @@ import PageHead from '@/components/layout/PageHead'
 
 const userData = {
   about:
-    'Sou natural de Pirapora, Minas Gerais, e atualmente resido em Belo Horizonte. Tenho 45 anos e atuo na área de tecnologia há mais de duas décadas, com forte especialização em design de interfaces e desenvolvimento web. Atualmente, estou em processo de graduação em Gestão da Tecnologia da Informação, ampliando ainda mais minha visão estratégica sobre soluções digitais e infraestrutura tecnológica.',
+    'Sou natural de Pirapora, Minas Gerais, e atualmente resido em Belo Horizonte. Tenho 45 anos e atuo na área de tecnologia há mais de duas décadas, com forte especialização em design de interfaces e desenvolvimento web. Atualmente, estou em processo de graduação em Gestão da Tecnologia da Informação, ampliando ainda mais minha visão estratégica sobre soluções digitais e infraestrutura tecnológica. Sou apaixonado por tecnologia, natureza e música. Nos meus momentos livres, gosto de viajar para conhecer novos lugares, explorar diferentes culturas e praticar esportes ao ar livre. Acredito que essas vivências fortalecem minha criatividade e me ajudam a manter o equilíbrio entre a vida pessoal e profissional.',
   journey:
-    'Minha trajetória começou há mais de 15 anos, quando me apaixonei pelo desenvolvimento web. Desde então, trabalhei em diversos projetos, adquirindo conhecimento em tecnologias modernas e metodologias ágeis. Minha especialidade é transformar ideias em interfaces intuitivas e de alto desempenho.',
+    'Minha carreira começou em Brasília, no início dos anos 2000, quando tive a oportunidade de atuar como web designer. Essa experiência marcou o início da minha jornada no desenvolvimento web, área pela qual me apaixonei e sigo até hoje. Desde então, passei por empresas de diferentes segmentos e regiões do Brasil, incluindo capitais como São Paulo, Florianópolis e Belo Horizonte. Atuei em projetos relevantes em empresas como Softplan, Saraiva, Locaweb e Squadra, construindo uma base sólida em tecnologia e design digital.',
 }
 
 const sections = [
