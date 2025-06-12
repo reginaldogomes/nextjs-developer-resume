@@ -21,7 +21,7 @@ const MenuLinks = ({ handleLinkClick }: { handleLinkClick?: () => void }) => {
           href={href}
           onClick={handleLinkClick}
           className={`text-lg font-medium px-4 py-2 rounded-md transition-all hover:bg-accent hover:text-white ${
-            pathname === href ? 'bg-accent text-white' : 'text-gray-300'
+            pathname === href ? 'bg-accent text-white' : 'text-gray'
           }`}
         >
           {label}
