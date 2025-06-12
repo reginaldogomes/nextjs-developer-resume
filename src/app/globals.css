@@ -68,17 +68,22 @@
   }
 
   .dark {
-    --color-background: #1a1a1a;
-    --color-surface: #2c2c2c;
-    --color-border: #3a3a3a;
-    --color-foreground: #f0f0f0;
-    --color-muted: #b0b0b0;
-    --color-primary: #004d61;
-    --color-secondary: #822659;
-    --color-accent: #3e5641;
-    --color-success: #2ea043;
-    --color-danger: #f85149;
-    --color-warning: #e3b341;
+    --color-background: #f5f7fa; /* Fundo geral bem claro */
+    --color-surface: #ffffff; /* Cartões, seções, blocos */
+    --color-border: #e3e8ee; /* Bordas, divisórias, inputs */
+    --color-foreground: #1a1a1a; /* Texto principal */
+    --color-muted: #6b7280; /* Texto secundário / detalhes */
+
+    --color-accent: #004d61; /* Cor principal de destaque */
+    --color-accent-light: #e6f1f4; /* Versão clara para hover/backgrounds */
+    --color-accent-dark: #003545; /* Versão escura para hover em botões */
+
+    --color-primary: #007c91; /* Azul médio derivado do accent */
+    --color-secondary: #4f6d7a; /* Azul acinzentado elegante */
+
+    --color-success: #27a87d; /* Verde suave para sucesso */
+    --color-danger: #d9534f; /* Vermelho clássico para erro */
+    --color-warning: #f0ad4e; /* Amarelo dourado moderno */
   }
 }
 

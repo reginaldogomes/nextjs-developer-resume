@@ -20,7 +20,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'GitHub',
-    url: 'https://www.github.com/reginaldogomesalves/',
+    url: 'https://www.github.com/reginaldogomes/',
     icon: <FaGithub />,
   },
 ]
