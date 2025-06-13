@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import MenuLinks from './MenuLinks'
 import { Loading } from '@/components/shared/Loading'
+import { X } from 'lucide-react'
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +14,7 @@ const MobileMenu = () => {
     setTimeout(() => {
       setIsOpen(false)
       setIsLoading(false)
-    }, 1500)
+    }, 1000)
   }
 
   return (
@@ -25,25 +26,35 @@ const MobileMenu = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.4, ease: 'easeInOut' }}
-            className="fixed inset-0 bg-accent bg-opacity-90 backdrop-blur-lg z-50 flex flex-col items-center justify-center p-6"
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="fixed inset-0 bg-accent bg-opacity-95 backdrop-blur-lg z-50 flex flex-col items-center justify-center px-6 py-10"
           >
-            <MenuLinks handleLinkClick={handleLinkClick} />
-
-            {isLoading && <Loading />}
-
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+            {/* Botão de fechar no topo à direita */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-4 right-4 text-foreground hover:text-white transition-colors"
+              aria-label="Fechar Menu"
             >
-              <Button onClick={() => setIsOpen(false)} variant="destructive">
-                Fechar Menu
-              </Button>
+              <X size={28} />
+            </button>
+
+            {/* Links com fonte maior */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center space-y-6 text-2xl font-medium text-white"
+            >
+              <MenuLinks handleLinkClick={handleLinkClick} />
             </motion.div>
+
+            {/* Loading discreto no canto inferior */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+              {isLoading && <Loading />}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
