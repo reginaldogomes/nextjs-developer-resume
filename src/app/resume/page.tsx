@@ -1,10 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import PageHead from '@/components/layout/PageHead'
 import Main from '@/components/layout/Main'
-import { CustomLink } from '@/components/Link'
+import { Badge } from '@/components/ui/badge'
+import { FaUser, FaBullseye, FaBriefcase, FaTools } from 'react-icons/fa'
 
 const userData = {
   nome: 'Reginaldo Gomes',
@@ -18,70 +19,105 @@ const userData = {
     'Analista Desenvolvedor Front-end - Locaweb (2022 - 2023)',
     'Analista Desenvolvedor Web - Itatiaia (2021 - 2022)',
   ],
-  competencias: [
-    '🚀 React & Next.js',
-    '🎨 Tailwind CSS & Shadcn UI',
-    '⚙️ Git & CI/CD',
-    '📦 Node.js & MongoDB',
+  tecnologias: [
+    { name: 'React', destaque: true },
+    { name: 'Next.js', destaque: true },
+    { name: 'TypeScript', destaque: true },
+    { name: 'Tailwind CSS', destaque: true },
+    { name: 'Shadcn UI', destaque: true },
+    { name: 'Node.js', destaque: false },
+    { name: 'MongoDB', destaque: false },
+    { name: 'Git', destaque: false },
+    { name: 'Figma', destaque: false },
+    { name: 'Vercel', destaque: false },
   ],
 }
 
 const sections = [
-  { title: 'Resumo Profissional', content: userData.resumo },
-  { title: 'Objetivo Profissional', content: userData.objetivo },
-  { title: 'Experiência Profissional', content: userData.experiencia },
-  { title: 'Competências Técnicas', content: userData.competencias },
+  {
+    title: 'Resumo Profissional',
+    content: userData.resumo,
+    icon: <FaUser className="text-primary" />,
+  },
+  {
+    title: 'Objetivo Profissional',
+    content: userData.objetivo,
+    icon: <FaBullseye className="text-primary" />,
+  },
+  {
+    title: 'Experiência Profissional',
+    content: userData.experiencia,
+    icon: <FaBriefcase className="text-primary" />,
+  },
 ]
 
 const Page = () => (
   <Main>
-    <PageHead
-      title="Currículo"
-      description="Confira minhas habilidades e experiências profissionais."
-    />
+    <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
+      <div className="text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold text-primary">
+          {userData.nome}
+        </h1>
+        <p className="text-muted-foreground text-lg mt-2">{userData.cargo}</p>
+      </div>
 
-    <div className="min-h-screen flex items-center justify-center bg-background px-4 py-16">
-      <motion.div
-        className="w-full bg-surface border border-border text-foreground p-10 rounded-2xl shadow-xl space-y-10"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-      >
-        {/* Conteúdo */}
-        <CardContent className="space-y-8">
-          {sections.map(({ title, content }, index) => (
-            <motion.section
-              key={title}
-              className="bg-muted/5 border border-border p-6 rounded-xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.2 }}
-            >
-              <h2 className="text-xl font-semibold text-primary mb-2">
-                {title}
-              </h2>
-              {Array.isArray(content) ? (
-                <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                  {content.map((text, i) => (
-                    <li key={i}>{text}</li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm text-muted-foreground">{content}</p>
-              )}
-            </motion.section>
-          ))}
-        </CardContent>
+      <div className="space-y-8">
+        {sections.map(({ title, content, icon }, index) => (
+          <motion.div
+            key={title}
+            className="bg-muted/5 border border-border p-6 rounded-xl shadow"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+          >
+            <div className="flex items-center gap-3 mb-2">
+              {icon}
+              <h2 className="text-xl font-semibold text-foreground">{title}</h2>
+            </div>
+            {Array.isArray(content) ? (
+              <ul className="list-disc pl-5 space-y-1 text-muted-foreground text-sm">
+                {content.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-muted-foreground text-sm">{content}</p>
+            )}
+          </motion.div>
+        ))}
 
-        {/* Botão de Ação */}
+        {/* Nuvem de Tecnologias */}
         <motion.div
-          className="flex justify-center"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 1 }}
-        ></motion.div>
-      </motion.div>
-    </div>
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className="bg-muted/5 border border-border p-6 rounded-xl shadow"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <FaTools className="text-primary" />
+            <h2 className="text-xl font-semibold text-foreground">
+              Tecnologias Dominadas
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap gap-3 mt-4">
+            {userData.tecnologias.map((tech) => (
+              <Badge
+                key={tech.name}
+                variant={tech.destaque ? 'default' : 'outline'}
+                className={`text-sm px-3 py-1 ${
+                  tech.destaque
+                    ? 'bg-primary text-background'
+                    : 'text-muted-foreground border-muted'
+                }`}
+              >
+                {tech.name}
+              </Badge>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
   </Main>
 )
 
