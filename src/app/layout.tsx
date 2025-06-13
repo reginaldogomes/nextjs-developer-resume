@@ -1,5 +1,6 @@
 'use client'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { GoogleTagManager } from '@/components/GoogleTagManager'
+
 import type { Metadata } from 'next'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
@@ -20,11 +21,20 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${sourceCodePro.variable}`}>
       <body className="font-mono dark bg-surface">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N78BQVKX"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
+        <GoogleTagManager gtmId="GTM-N78BQVKX" />
         <Header />
         <Main>{children}</Main>
         <Footer />
         {pathname !== '/' && <FloatingButton />}
-        <GoogleAnalytics />
       </body>
     </html>
   )
