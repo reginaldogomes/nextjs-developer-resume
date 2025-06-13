@@ -23,7 +23,7 @@ const aboutMeCards = [
 
 export default function Home() {
   return (
-    <Main>
+    <>
       <Hero
         name="Reginaldo Gomes"
         title="Front-end Developer · UX/UI Designer · Web Interface"
@@ -31,19 +31,21 @@ export default function Home() {
         message="Transformo ideias em interfaces modernas, acessíveis e de alto desempenho. Com foco em usabilidade, performance e design centrado no usuário, desenvolvo experiências digitais que encantam e geram resultados."
         ctaLinks={[{ label: '📩 Fale comigo', url: '/contact' }]}
       />
-      <AboutHome />
+      <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
+        <AboutHome />
 
-      <Section className="flex-row">
-        {aboutMeCards.map((card, index) => (
-          <AboutMe
-            key={index}
-            title={card.title}
-            description={card.description}
-            buttonText={card.buttonText}
-            buttonLink={card.buttonLink}
-          />
-        ))}
-      </Section>
-    </Main>
+        <Section className="flex-row">
+          {aboutMeCards.map((card, index) => (
+            <AboutMe
+              key={index}
+              title={card.title}
+              description={card.description}
+              buttonText={card.buttonText}
+              buttonLink={card.buttonLink}
+            />
+          ))}
+        </Section>
+      </section>
+    </>
   )
 }

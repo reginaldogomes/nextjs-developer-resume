@@ -20,7 +20,7 @@ const sections = [
 
 export default function Page() {
   return (
-    <>
+    <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
       <div className="text-center">
         <h1 className="text-4xl sm:text-5xl font-bold text-primary">
           Currículo
@@ -53,6 +53,6 @@ export default function Page() {
           </motion.section>
         ))}
       </motion.div>
-    </>
+    </section>
   )
 }

@@ -42,7 +42,7 @@ const services = [
   },
   {
     icon: '📈',
-    title: 'Análise de Dados',
+    title: 'Dados',
     description: 'Transformação de dados em insights valiosos para decisões.',
     link: '/servicos/analise-dados',
   },
@@ -54,7 +54,7 @@ const services = [
   },
   {
     icon: '⚙️',
-    title: 'Integrações Web',
+    title: 'Estratégias',
     description: 'Integração com APIs, CRMs e ferramentas automatizadas.',
     link: '/servicos/integracoes-web',
   },

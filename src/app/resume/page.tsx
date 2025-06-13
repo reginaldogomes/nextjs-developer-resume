@@ -46,6 +46,7 @@ const techStacks: Record<
   frontend: [
     { name: 'React', destaque: true },
     { name: 'Next.js', destaque: true },
+    { name: 'JavaScript', destaque: true },
     { name: 'TypeScript', destaque: true },
     { name: 'Tailwind CSS', destaque: true },
   ],
