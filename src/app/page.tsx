@@ -4,6 +4,15 @@ import AboutMe from '@/components/Widget'
 import Section from '@/components/layout/Section'
 import AboutHome from '@/components/AboutHome'
 
+import { createMetadata } from '@/lib/seo'
+
+export const metadata = createMetadata({
+  title: 'Sobre | Reginaldo Gomes',
+  description:
+    'Conheça minha trajetória como desenvolvedor Front-end com foco em soluções cloud.',
+  path: '/about',
+})
+
 const aboutMeCards = [
   {
     title: 'Sobre',

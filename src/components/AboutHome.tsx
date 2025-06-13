@@ -16,14 +16,14 @@ const sobreData = {
 
 const SobreResumo = () => {
   return (
-    <section className="w-full bg-muted/20 py-20">
+    <section className="bg-white border border-border p-6 rounded-xl shadow">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="max-w-4xl mx-auto px-6 text-center space-y-6"
       >
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-accent">
           {sobreData.titulo}
         </h2>
 
