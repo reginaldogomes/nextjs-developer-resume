@@ -31,15 +31,6 @@ const MobileMenu = () => {
             transition={{ duration: 0.4, ease: 'easeInOut' }}
             className="fixed inset-0 bg-accent bg-opacity-90 backdrop-blur-lg z-50 flex flex-col items-center justify-center p-6"
           >
-            <motion.h2
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              className="text-2xl font-bold text-white mb-6"
-            >
-              Menu
-            </motion.h2>
-
             <MenuLinks handleLinkClick={handleLinkClick} />
 
             {isLoading && <Loading />}
