@@ -41,7 +41,7 @@ const MobileMenu = () => {
             {/* Botão de fechar com ícone branco, canto superior direito */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-5 right-5 text-white hover:text-gray-300 transition-colors"
+              className="absolute top-5 right-7 text-white hover:text-gray-300 transition-colors"
               aria-label="Fechar Menu"
             >
               <X size={32} />
