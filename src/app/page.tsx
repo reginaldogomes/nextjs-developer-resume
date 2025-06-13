@@ -7,7 +7,7 @@ import AboutHome from '@/components/AboutHome'
 import { createMetadata } from '@/lib/seo'
 
 export const metadata = createMetadata({
-  title: 'Reginaldo Gomes | Desenvolvedor Front-end e Especialista em Cloud',
+  title: 'Reginaldo Gomes | Desenvolvedor Front-end | UX/UI | Web Interface',
   description:
     'Desenvolvedor front-end com foco em React, Next.js, TypeScript e soluções em nuvem. Crio experiências modernas, rápidas e acessíveis.',
   path: '/about',
