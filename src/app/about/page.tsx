@@ -1,5 +1,12 @@
 'use client'
+import PageHead from '@/components/layout/PageHead'
 import { motion } from 'framer-motion'
+
+const PageHeadData = {
+  title: 'Sobre',
+  description:
+    'Entre em contato para informações, propostas ou colaborações. Responderei o mais breve possível.',
+}
 
 const userData = {
   about:
@@ -20,15 +27,11 @@ const sections = [
 
 export default function Page() {
   return (
-    <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
-      <div className="text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold text-primary">
-          Currículo
-        </h1>
-        <p className="text-muted-foreground text-lg mt-2">
-          Conheça meu perfil profissional
-        </p>
-      </div>
+    <section className="w-full mx-auto px-4 py-16 space-y-12">
+      <PageHead
+        title={PageHeadData.title}
+        description={PageHeadData.description}
+      />
       <motion.div
         className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-12"
         initial={{ opacity: 0, y: 20 }}

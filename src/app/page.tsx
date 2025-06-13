@@ -38,7 +38,7 @@ export default function Home() {
         title="Front-end Developer · UX/UI Designer · Web Interface"
         backgroundImage="/images/hero_bg.webp"
         message="Transformo ideias em interfaces modernas, acessíveis e de alto desempenho. Com foco em usabilidade, performance e design centrado no usuário, desenvolvo experiências digitais que encantam e geram resultados."
-        ctaLinks={[{ label: '📩 Fale comigo', url: '/contact' }]}
+        ctaLinks={[{ label: 'Fale comigo', url: '/contact' }]}
       />
       <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
         <AboutHome />

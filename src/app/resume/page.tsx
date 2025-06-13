@@ -40,18 +40,35 @@ const sections = [
 
 const techStacks: Record<
   'design' | 'frontend' | 'backend' | 'cloud',
-  { name: string; destaque?: boolean }[]
+  { name: string; nivel: number }[]
 > = {
-  design: [{ name: 'Figma' }, { name: 'Shadcn UI' }],
-  frontend: [
-    { name: 'React', destaque: true },
-    { name: 'Next.js', destaque: true },
-    { name: 'JavaScript', destaque: true },
-    { name: 'TypeScript', destaque: true },
-    { name: 'Tailwind CSS', destaque: true },
+  design: [
+    { name: 'Figma', nivel: 3 },
+    { name: 'UX/UI', nivel: 4 },
+    { name: 'HTML', nivel: 5 },
+    { name: 'CSS', nivel: 5 },
   ],
-  backend: [{ name: 'Node.js' }, { name: 'Nest.js' }, { name: 'PostgreSQL' }],
-  cloud: [{ name: 'Git' }, { name: 'Azure' }, { name: 'Vercel' }],
+  frontend: [
+    { name: 'React', nivel: 5 },
+    { name: 'Next.js', nivel: 5 },
+    { name: 'JavaScript', nivel: 5 },
+    { name: 'TypeScript', nivel: 5 },
+    { name: 'Tailwind CSS', nivel: 4 },
+    { name: 'Shadcn UI', nivel: 4 },
+  ],
+  backend: [
+    { name: 'Node.js', nivel: 4 },
+    { name: 'Nest.js', nivel: 2 },
+    { name: 'PostgreSQL', nivel: 3 },
+    { name: 'Prisma', nivel: 3 },
+    { name: 'API', nivel: 5 },
+  ],
+  cloud: [
+    { name: 'Git', nivel: 5 },
+    { name: 'Azure', nivel: 5 },
+    { name: 'CI/CD', nivel: 4 },
+    { name: 'Docker', nivel: 3 },
+  ],
 }
 
 const Page = () => (
@@ -83,7 +100,9 @@ const Page = () => (
               ))}
             </ul>
           ) : (
-            <p className="text-muted-foreground text-sm">{content}</p>
+            <p className="text-muted-foreground text-sm text-justify">
+              {content}
+            </p>
           )}
         </motion.div>
       ))}
@@ -117,19 +136,21 @@ const Page = () => (
                   {tituloCategoria[categoria]}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {tecnologias.map((tech) => (
-                    <Badge
-                      key={tech.name}
-                      variant={tech.destaque ? 'default' : 'outline'}
-                      className={`text-sm px-3 py-1 ${
-                        tech.destaque
-                          ? ''
-                          : 'border-muted-foreground text-muted-foreground'
-                      }`}
-                    >
-                      {tech.name}
-                    </Badge>
-                  ))}
+                  {tecnologias.map((tech) => {
+                    const bgOpacity = 0.3 + tech.nivel * 0.14 // varia entre ~0.44 e ~1.0
+                    return (
+                      <Badge
+                        key={tech.name}
+                        variant="default"
+                        style={{
+                          opacity: 0.4 + tech.nivel * 0.12, // Varia entre ~0.64 e 1.0
+                        }}
+                        className="text-sm px-3 py-1 bg-accent text-white font-medium"
+                      >
+                        {tech.name}
+                      </Badge>
+                    )
+                  })}
                 </div>
               </div>
             )

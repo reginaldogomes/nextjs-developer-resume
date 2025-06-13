@@ -28,7 +28,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
       className={cn(
-        'w-full bg-muted/10 border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition',
+        'w-full bg-white border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition',
         className
       )}
     >
