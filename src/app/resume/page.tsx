@@ -1,7 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaUser, FaBullseye, FaBriefcase, FaTools } from 'react-icons/fa'
+import {
+  FaUser,
+  FaBullseye,
+  FaBriefcase,
+  FaTools,
+  FaGraduationCap,
+} from 'react-icons/fa'
 import { Badge } from '@/components/ui/badge'
 import PageHead from '@/components/layout/PageHead'
 
@@ -16,10 +22,13 @@ const userData = {
   objetivo:
     'Atuar em projetos desafiadores que contribuam para meu desenvolvimento técnico e estratégico, com foco em front-end e soluções em nuvem.\n\nBusco oportunidades que promovam evolução contínua e permitam assumir responsabilidades crescentes, incluindo a liderança técnica de times e projetos de alta relevância.',
   experiencia: [
-    'Analista Desenvolvedor Front-end - BH Solutions (2023 - Atual)',
+    'Analista Desenvolvedor Front-end - BH Solutions (2023 - 2025)',
     'Analista Desenvolvedor Front-end - Locaweb (2022 - 2023)',
-    'Analista Desenvolvedor Web - Itatiaia (2021 - 2022)',
+    'Analista Desenvolvedor Web - Cozinhas Itatiaia (2021 - 2022)',
+    'Web Designer - Softplan (2021 - 2022)',
   ],
+  educacao:
+    'Curso Superior de Tecnologia (CST)\nGestão da Tecnologia da Informação\nUniCesumar - 2024 / 2026',
 }
 
 const sections = [
@@ -38,6 +47,11 @@ const sections = [
     content: userData.experiencia,
     icon: <FaBriefcase className="text-primary" />,
   },
+  {
+    title: 'Educação',
+    content: userData.educacao,
+    icon: <FaGraduationCap className="text-primary" />,
+  },
 ]
 
 const techStacks: Record<
@@ -48,6 +62,7 @@ const techStacks: Record<
     { name: 'Figma', nivel: 5 },
     { name: 'UX/UI', nivel: 5 },
     { name: 'CSS', nivel: 5 },
+    { name: 'HTML', nivel: 5 },
   ],
   frontend: [
     { name: 'React', nivel: 5 },

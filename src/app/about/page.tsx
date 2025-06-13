@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const PageHeadData = {
   title: 'Sobre',
   description:
-    'Um breve panorama sobre quem sou e o caminho que trilhei até aqui.',
+    'Um breve panorama sobre quem sou, minha trajetória profissional e o caminho que trilhei até aqui em busca de crescimento, aprendizado e realizações.',
 }
 
 const userData = {
@@ -27,7 +27,7 @@ const sections = [
 
 export default function Page() {
   return (
-    <section className="w-full mx-auto px-4 py-16 space-y-12">
+    <section className="max-w-5xl mx-auto px-4 py-16 space-y-12">
       <PageHead
         title={PageHeadData.title}
         description={PageHeadData.description}
