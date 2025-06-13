@@ -15,7 +15,7 @@ const sobreData = {
 
 const SobreResumo = () => {
   return (
-    <section className="w-full bg-muted/60 py-20">
+    <section className="w-full bg-muted/20 py-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
