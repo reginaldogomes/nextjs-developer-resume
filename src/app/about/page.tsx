@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
 import Main from '@/components/layout/Main'
-import PageHead from '@/components/layout/PageHead'
 
 const userData = {
   about:
@@ -24,11 +23,13 @@ export default function Page() {
   return (
     <>
       <Main>
-        <PageHead
-          title="Sobre"
-          description="Conheça minha história e experiência profissional."
-        />
-
+        <div className="max-w-6xl mx-auto text-center space-y-4">
+          <h2 className="text-4xl font-bold">Serviços Especializados</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Estratégia, design e desenvolvimento para experiências digitais
+            excepcionais.
+          </p>
+        </div>
         <motion.div
           className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-12"
           initial={{ opacity: 0, y: 20 }}

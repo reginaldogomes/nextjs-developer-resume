@@ -2,8 +2,6 @@ import Main from '@/components/layout/Main'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/Widget'
 import Section from '@/components/layout/Section'
-import Services from '@/components/Services'
-import Lead from '@/components/Lead'
 import AboutHome from '@/components/AboutHome'
 
 const aboutMeCards = [

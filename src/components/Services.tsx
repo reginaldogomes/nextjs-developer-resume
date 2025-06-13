@@ -1,113 +1,99 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { FiArrowRight } from 'react-icons/fi'
 
-// Dados organizados por áreas de conhecimento
-const servicesData = {
-  'Desenvolvimento Web': [
-    {
-      icon: '🌐',
-      title: 'Web Design',
-      description: 'Criamos interfaces intuitivas e responsivas.',
-      link: '/areas/desenvolvimento-web/web-design',
-    },
-    {
-      icon: '⚙️',
-      title: 'Desenvolvimento Frontend',
-      description: 'Tecnologias modernas para uma melhor experiência.',
-      link: '/areas/desenvolvimento-web/frontend',
-    },
-  ],
-  'Computação em Nuvem': [
-    {
-      icon: '☁️',
-      title: 'Infraestrutura Cloud',
-      description: 'Escalabilidade e segurança para seu negócio.',
-      link: '/areas/computacao-nuvem/infraestrutura',
-    },
-    {
-      icon: '🔐',
-      title: 'Segurança na Nuvem',
-      description: 'Protegemos seus dados contra ameaças.',
-      link: '/areas/computacao-nuvem/seguranca',
-    },
-  ],
-  'Marketing Digital': [
-    {
-      icon: '📈',
-      title: 'SEO & Performance',
-      description: 'Aumente a visibilidade e alcance seu público.',
-      link: '/areas/marketing-digital/seo-performance',
-    },
-    {
-      icon: '💡',
-      title: 'Gestão de Anúncios',
-      description: 'Campanhas estratégicas para maximizar ROI.',
-      link: '/areas/marketing-digital/gestao-anuncios',
-    },
-  ],
-  'Inteligência Artificial': [
-    {
-      icon: '🤖',
-      title: 'Chatbots & Automação',
-      description: 'Soluções inteligentes para eficiência empresarial.',
-      link: '/areas/inteligencia-artificial/chatbots-automacao',
-    },
-    {
-      icon: '🧠',
-      title: 'Machine Learning',
-      description: 'Modelos avançados para análise de dados.',
-      link: '/areas/inteligencia-artificial/machine-learning',
-    },
-  ],
-}
+const services = [
+  {
+    icon: '🎨',
+    title: 'UI Design',
+    description:
+      'Criação de interfaces limpas, acessíveis e centradas no usuário.',
+    link: '/servicos/ui-design',
+  },
+  {
+    icon: '⚛️',
+    title: 'Front-end',
+    description:
+      'Aplicações responsivas com React, Next.js e melhores práticas.',
+    link: '/servicos/frontend',
+  },
+  {
+    icon: '🧩',
+    title: 'Design Systems',
+    description:
+      'Sistemas consistentes com componentes reutilizáveis e escaláveis.',
+    link: '/servicos/design-systems',
+  },
+  {
+    icon: '🚀',
+    title: 'Performance',
+    description: 'Sites rápidos, otimizados e inclusivos desde o código.',
+    link: '/servicos/performance-acessibilidade',
+  },
+  {
+    icon: '🤖',
+    title: 'Agentes de IA',
+    description: 'Assistentes inteligentes integrados ao seu negócio digital.',
+    link: '/servicos/agentes-ia',
+  },
+  {
+    icon: '📈',
+    title: 'Análise de Dados',
+    description: 'Transformação de dados em insights valiosos para decisões.',
+    link: '/servicos/analise-dados',
+  },
+  {
+    icon: '🔍',
+    title: 'SEO Técnico',
+    description: 'Otimização do site para melhor ranqueamento e performance.',
+    link: '/servicos/seo-tecnico',
+  },
+  {
+    icon: '⚙️',
+    title: 'Integrações Web',
+    description: 'Integração com APIs, CRMs e ferramentas automatizadas.',
+    link: '/servicos/integracoes-web',
+  },
+]
 
 export default function Services() {
   return (
-    <section className="w-full py-16 px-6 bg-[#0e1117] text-[#e5e7eb]">
-      {/* Cabeçalho */}
-      <div className="text-center">
-        <h2 className="text-4xl font-bold text-[#3b82f6]">
-          🧠 Áreas de Conhecimento
-        </h2>
-        <p className="text-lg mt-4 max-w-xl mx-auto text-[#8b949e]">
-          Soluções integradas em tecnologia, inovação e performance digital.
-        </p>
-      </div>
-
-      {/* Grid de serviços */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-10">
-        {Object.entries(servicesData).map(([category, services]) => (
-          <Card
-            key={category}
-            className="p-6 bg-[#161b22] border border-[#21262d] rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+    <section className="w-full py-20 px-6 bg-background text-foreground">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 max-w-6xl mx-auto">
+        {services.map((service, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold text-[#7c3aed] text-center">
-              {category}
-            </h3>
-            <div className="space-y-4 mt-4">
-              {services.map((service) => (
-                <div key={service.title}>
-                  <Link href={service.link}>
-                    <h4 className="text-lg font-medium flex items-center gap-2 text-[#e5e7eb] hover:text-[#fdc700] transition">
-                      {service.icon} {service.title}
-                    </h4>
-                  </Link>
-                  <p className="text-[#8b949e]">{service.description}</p>
-                </div>
-              ))}
-            </div>
-          </Card>
+            <Card className="p-6 text-left shadow-sm hover:shadow-md border border-border bg-card transition">
+              <h3 className="text-xl font-semibold flex items-center gap-2 mb-2">
+                <span className="text-2xl">{service.icon}</span> {service.title}
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                {service.description}
+              </p>
+              <Link
+                href={service.link}
+                className="inline-flex items-center gap-1 text-primary text-sm mt-4 hover:underline"
+              >
+                Saiba mais <FiArrowRight className="w-4 h-4" />
+              </Link>
+            </Card>
+          </motion.div>
         ))}
       </div>
 
-      {/* Botão de ação */}
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-16">
         <Link href="/contact">
-          <Button className="bg-[#fdc700] text-[#0e1117] hover:bg-[#e3b341] transition">
-            Solicitar Proposta
+          <Button className="px-6 py-2 text-base font-medium">
+            Solicitar proposta personalizada
           </Button>
         </Link>
       </div>

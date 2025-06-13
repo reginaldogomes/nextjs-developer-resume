@@ -1,15 +1,17 @@
 import Main from '@/components/layout/Main'
-import PageHead from '@/components/layout/PageHead'
 import Services from '@/components/Services'
 import React from 'react'
 
 const Page = () => {
   return (
     <Main>
-      <PageHead
-        title="Serviços"
-        description="Esta é uma breve descrição do conteúdo."
-      />
+      <div className="max-w-6xl mx-auto text-center space-y-4">
+        <h2 className="text-4xl font-bold">Serviços Especializados</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Estratégia, design e desenvolvimento para experiências digitais
+          excepcionais.
+        </p>
+      </div>
       <Services />
     </Main>
   )
