@@ -56,9 +56,11 @@ const Page = () => (
     <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
       <div className="text-center">
         <h1 className="text-4xl sm:text-5xl font-bold text-primary">
-          {userData.nome}
+          Curriculo
         </h1>
-        <p className="text-muted-foreground text-lg mt-2">{userData.cargo}</p>
+        <p className="text-muted-foreground text-lg mt-2">
+          Conheça meu perfil profissional
+        </p>
       </div>
 
       <div className="space-y-8">
