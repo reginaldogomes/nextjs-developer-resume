@@ -50,7 +50,8 @@ const services = [
   {
     icon: '🔍',
     title: 'SEO Técnico',
-    description: 'Otimização do site para melhor ranqueamento e performance.',
+    description:
+      'Otimização do site para melhor ranqueamento e performance nas buscas.',
     link: '/servicos/seo-tecnico',
   },
   {
@@ -65,7 +66,7 @@ const services = [
 export default function Services() {
   return (
     <section className="w-full py-20 px-6 bg-background text-foreground">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <motion.div
             key={index}
