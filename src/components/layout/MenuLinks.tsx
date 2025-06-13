@@ -4,8 +4,8 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 const menuItems = [
-  { href: '/resume', label: 'Currículo' },
   { href: '/about', label: 'Sobre' },
+  { href: '/resume', label: 'Currículo' },
   { href: '/solutions', label: 'Serviços' },
   { href: '/contact', label: 'Contato' },
 ]

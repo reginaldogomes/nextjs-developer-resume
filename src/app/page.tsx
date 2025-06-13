@@ -27,9 +27,9 @@ export default function Home() {
     <Main>
       <Hero
         name="Reginaldo Gomes"
-        title="Desenvolvedor Front-end | Cloud Engineer | Especialista em Transformação Digital"
+        title="Front-end Developer · UX/UI Designer · Web Interface"
         backgroundImage="/images/hero_bg.webp"
-        message="Transformando ideias em soluções digitais com design moderno, performance e inteligência de negócio."
+        message="Transformo ideias em interfaces modernas, acessíveis e de alto desempenho. Com foco em usabilidade, performance e design centrado no usuário, desenvolvo experiências digitais que encantam e geram resultados."
         ctaLinks={[
           { label: '📩 Fale comigo', url: '/contato' },
           { label: '📁 Baixar CV', url: '/cv.pdf' },
