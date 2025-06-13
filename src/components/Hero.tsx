@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({
   ctaLinks,
 }) => (
   <section
-    className="relative w-full min-h-screen flex items-center justify-center text-center text-white"
+    className="relative w-full min-h-[480px] flex items-center justify-center text-center text-white"
     style={{
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: 'cover',

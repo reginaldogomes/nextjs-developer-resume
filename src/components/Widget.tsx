@@ -2,21 +2,24 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
 
-interface AboutMeProps {
+interface AboutCardProps {
   title: string
   description: string
   icon?: React.ReactNode
   buttonText?: string
   buttonLink?: string
+  className?: string
 }
 
-const AboutMe: React.FC<AboutMeProps> = ({
+const AboutCard: React.FC<AboutCardProps> = ({
   title,
   description,
   icon,
-  buttonText = 'Ver detalhes',
+  buttonText = 'Saiba mais',
   buttonLink = '#',
+  className,
 }) => {
   return (
     <motion.section
@@ -24,22 +27,27 @@ const AboutMe: React.FC<AboutMeProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="w-full p-6 rounded-2xl text-zinc-200 backdrop-blur-sm shadow-lg flex flex-col justify-between transition hover:shadow-xl"
+      className={cn(
+        'w-full bg-muted/10 border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition',
+        className
+      )}
     >
-      {/* Ícone dinâmico */}
-      <div className="mb-4">{icon}</div>
+      {/* Icone */}
+      {icon && <div className="mb-4 text-primary text-3xl">{icon}</div>}
 
       {/* Conteúdo */}
       <div className="flex-1">
-        <h2 className="text-xl font-semibold text-purple-400 mb-2">{title}</h2>
-        <p className="text-sm leading-relaxed text-zinc-300">{description}</p>
+        <h2 className="text-lg font-semibold text-foreground mb-2">{title}</h2>
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          {description}
+        </p>
       </div>
 
       {/* Botão */}
       <div className="mt-6">
         <Link
           href={buttonLink}
-          className="inline-block px-4 py-2 rounded-md bg-accent text-white text-sm font-medium hover:bg-purple-700 transition"
+          className="inline-block text-sm px-4 py-2 rounded-md bg-primary text-background font-medium hover:brightness-110 transition"
         >
           {buttonText}
         </Link>
@@ -48,4 +56,4 @@ const AboutMe: React.FC<AboutMeProps> = ({
   )
 }
 
-export default AboutMe
+export default AboutCard
