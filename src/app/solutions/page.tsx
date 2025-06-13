@@ -1,14 +1,18 @@
-import Main from '@/components/layout/Main'
 import PageHead from '@/components/layout/PageHead'
 import Services from '@/components/Services'
-import React from 'react'
+
+const PageHeadData = {
+  title: 'Serviços',
+  description:
+    'Estou sempre aberto a novas ideias, oportunidades e conexões profissionais. Fique à vontade para entrar em contato pelos canais abaixo:',
+}
 
 const Page = () => {
   return (
     <section className="w-full mx-auto px-4 py-16 space-y-12">
       <PageHead
-        title="Serviços"
-        description="Esta é uma breve descrição do conteúdo."
+        title={PageHeadData.title}
+        description={PageHeadData.description}
       />
       <Services />
     </section>

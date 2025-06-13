@@ -31,7 +31,8 @@ const services = [
   {
     icon: '🚀',
     title: 'Performance',
-    description: 'Sites rápidos, otimizados e inclusivos desde o código.',
+    description:
+      'Sites rápidos, acessíveis e otimizados para a melhor experiência do usuário',
     link: '/servicos/performance-acessibilidade',
   },
   {
@@ -55,7 +56,8 @@ const services = [
   {
     icon: '⚙️',
     title: 'Estratégias',
-    description: 'Integração com APIs, CRMs e ferramentas automatizadas.',
+    description:
+      'Estratégias Digitais, Integração com APIs, CRMs e automações.',
     link: '/servicos/integracoes-web',
   },
 ]
