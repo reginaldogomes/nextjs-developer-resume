@@ -4,15 +4,17 @@ import { motion } from 'framer-motion'
 import { FaUser, FaBullseye, FaBriefcase, FaTools } from 'react-icons/fa'
 import { Badge } from '@/components/ui/badge'
 import PageHead from '@/components/layout/PageHead'
-import Main from '@/components/layout/Main'
+
+const PageHeadData = {
+  title: 'Currículo',
+  description: 'Conheça meu perfil profissional',
+}
 
 const userData = {
-  nome: 'Currículo',
-  cargo: 'Conheça meu perfil profissional',
   resumo:
-    'Desenvolvedor front-end com experiência na construção de interfaces modernas, acessíveis e com alto desempenho. Utilizo tecnologias como React, Next.js e TypeScript para desenvolver aplicações escaláveis, integradas a serviços de nuvem. Atuo com soluções Microsoft Azure, incluindo App Services, Static Web Apps e pipelines de CI/CD com Azure DevOps. Foco na entrega de soluções digitais seguras, otimizadas e alinhadas às boas práticas de desenvolvimento em cloud.',
+    'Desenvolvedor front-end com experiência na construção de interfaces modernas, acessíveis e com alto desempenho. Utilizo tecnologias como React, Next.js e TypeScript para desenvolver aplicações escaláveis, integradas a serviços de nuvem. \n\nAtuo com soluções Microsoft Azure, incluindo App Services, Static Web Apps e pipelines de CI/CD com Azure DevOps. Foco na entrega de soluções digitais seguras, otimizadas e alinhadas às boas práticas de desenvolvimento em cloud.',
   objetivo:
-    'Atuar em projetos desafiadores que contribuam para meu desenvolvimento técnico e estratégico, com foco em front-end e soluções em nuvem. Busco oportunidades que promovam evolução contínua e permitam assumir responsabilidades crescentes, incluindo a liderança técnica de times e projetos de alta relevância.',
+    'Atuar em projetos desafiadores que contribuam para meu desenvolvimento técnico e estratégico, com foco em front-end e soluções em nuvem.\n\nBusco oportunidades que promovam evolução contínua e permitam assumir responsabilidades crescentes, incluindo a liderança técnica de times e projetos de alta relevância.',
   experiencia: [
     'Analista Desenvolvedor Front-end - BH Solutions (2023 - Atual)',
     'Analista Desenvolvedor Front-end - Locaweb (2022 - 2023)',
@@ -43,9 +45,8 @@ const techStacks: Record<
   { name: string; nivel: number }[]
 > = {
   design: [
-    { name: 'Figma', nivel: 3 },
-    { name: 'UX/UI', nivel: 4 },
-    { name: 'HTML', nivel: 5 },
+    { name: 'Figma', nivel: 5 },
+    { name: 'UX/UI', nivel: 5 },
     { name: 'CSS', nivel: 5 },
   ],
   frontend: [
@@ -68,17 +69,16 @@ const techStacks: Record<
     { name: 'Azure', nivel: 5 },
     { name: 'CI/CD', nivel: 4 },
     { name: 'Docker', nivel: 3 },
+    { name: 'AWS', nivel: 4 },
   ],
 }
 
 const Page = () => (
   <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
-    <div className="text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold text-primary">
-        {userData.nome}
-      </h1>
-      <p className="text-muted-foreground text-lg mt-2">{userData.cargo}</p>
-    </div>
+    <PageHead
+      title={PageHeadData.title}
+      description={PageHeadData.description}
+    />
 
     <div className="space-y-8">
       {sections.map(({ title, content, icon }, index) => (
@@ -100,7 +100,7 @@ const Page = () => (
               ))}
             </ul>
           ) : (
-            <p className="text-muted-foreground text-sm text-justify">
+            <p className="text-muted-foreground text-sm text-justify whitespace-pre-line">
               {content}
             </p>
           )}

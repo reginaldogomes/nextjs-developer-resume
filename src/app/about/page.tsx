@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const PageHeadData = {
   title: 'Sobre',
   description:
-    'Entre em contato para informações, propostas ou colaborações. Responderei o mais breve possível.',
+    'Um breve panorama sobre quem sou e o caminho que trilhei até aqui.',
 }
 
 const userData = {
