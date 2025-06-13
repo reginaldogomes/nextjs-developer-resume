@@ -1,6 +1,4 @@
 import Hero from '@/components/Hero'
-import AboutMe from '@/components/Widget'
-import Section from '@/components/layout/Section'
 import AboutHome from '@/components/AboutHome'
 
 import { createMetadata } from '@/lib/seo'
