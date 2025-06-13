@@ -1,10 +1,10 @@
-import Main from '@/components/layout/Main'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/Widget'
 import Section from '@/components/layout/Section'
 import AboutHome from '@/components/AboutHome'
 
 import { createMetadata } from '@/lib/seo'
+import CardsSection from '@/components/CardSection'
 
 export const metadata = createMetadata({
   title: 'Reginaldo Gomes | Desenvolvedor Front-end | UX/UI | Web Interface',
@@ -42,18 +42,7 @@ export default function Home() {
       />
       <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
         <AboutHome />
-
-        <Section className="flex-row">
-          {aboutMeCards.map((card, index) => (
-            <AboutMe
-              key={index}
-              title={card.title}
-              description={card.description}
-              buttonText={card.buttonText}
-              buttonLink={card.buttonLink}
-            />
-          ))}
-        </Section>
+        <CardsSection />
       </section>
     </>
   )
