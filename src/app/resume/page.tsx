@@ -57,16 +57,17 @@ const techStacks: Record<
     { name: 'Shadcn UI', nivel: 4 },
   ],
   backend: [
-    { name: 'Node.js', nivel: 3 },
+    { name: 'Node.js', nivel: 4 },
     { name: 'Nest.js', nivel: 2 },
     { name: 'PostgreSQL', nivel: 3 },
     { name: 'Prisma', nivel: 3 },
+    { name: 'API', nivel: 5 },
   ],
   cloud: [
-    { name: 'Git', nivel: 4 },
-    { name: 'Azure', nivel: 4 },
+    { name: 'Git', nivel: 5 },
+    { name: 'Azure', nivel: 5 },
     { name: 'CI/CD', nivel: 4 },
-    { name: 'Docker', nivel: 2 },
+    { name: 'Docker', nivel: 3 },
   ],
 }
 
@@ -142,11 +143,9 @@ const Page = () => (
                         key={tech.name}
                         variant="default"
                         style={{
-                          backgroundColor: `rgba(99, 102, 241, ${bgOpacity})`,
-                          color: '#fff',
-                          fontWeight: 500,
+                          opacity: 0.4 + tech.nivel * 0.12, // Varia entre ~0.64 e 1.0
                         }}
-                        className="text-sm px-3 py-1"
+                        className="text-sm px-3 py-1 bg-accent text-white font-medium"
                       >
                         {tech.name}
                       </Badge>
