@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({
         {name}
       </h1>
 
-      <p className="mt-3 text-lg sm:text-2xl text-white/90 font-medium tracking-wide drop-shadow-md">
+      <p className="mt-3 sm:text-2xl text-white/90 font-medium tracking-wide drop-shadow-md">
         {title}
       </p>
 
