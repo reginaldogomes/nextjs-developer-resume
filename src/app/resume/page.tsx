@@ -13,7 +13,8 @@ import PageHead from '@/components/layout/PageHead'
 
 const PageHeadData = {
   title: 'Currículo',
-  description: 'Conheça meu perfil profissional',
+  description:
+    'Explore minha trajetória profissional em tecnologia e inovação.',
 }
 
 const userData = {

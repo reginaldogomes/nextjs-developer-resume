@@ -14,8 +14,7 @@ import * as z from 'zod'
 
 const PageHeadData = {
   title: 'Contato',
-  description:
-    'Estou sempre aberto a novas ideias, oportunidades e conexões profissionais. Fique à vontade para entrar em contato pelos canais abaixo:',
+  description: 'Fique à vontade para entrar em contato pelos canais abaixo:',
 }
 
 const contactData = {
