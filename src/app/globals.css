@@ -44,23 +44,28 @@
     @apply bg-background text-foreground;
   }
 
-  .light {
-    --color-background: #f5f7fa; /* Fundo geral bem claro */
-    --color-surface: #ffffff; /* Cartões, seções, blocos */
-    --color-border: #e3e8ee; /* Bordas, divisórias, inputs */
-    --color-foreground: #1a1a1a; /* Texto principal */
-    --color-muted: #6b7280; /* Texto secundário / detalhes */
+  :root {
+    /* Default = light theme (fallback) */
+    --color-background: #f5f7fa;
+    --color-surface: #ffffff;
+    --color-border: #e3e8ee;
+    --color-foreground: #1a1a1a;
+    --color-muted: #6b7280;
 
-    --color-accent: #004d61; /* Cor principal de destaque */
-    --color-accent-light: #e6f1f4; /* Versão clara para hover/backgrounds */
-    --color-accent-dark: #003545; /* Versão escura para hover em botões */
+    --color-accent: #004d61;
+    --color-accent-light: #e6f1f4;
+    --color-accent-dark: #003545;
 
-    --color-primary: #007c91; /* Azul médio derivado do accent */
-    --color-secondary: #4f6d7a; /* Azul acinzentado elegante */
+    --color-primary: #007c91;
+    --color-secondary: #4f6d7a;
 
-    --color-success: #27a87d; /* Verde suave para sucesso */
-    --color-danger: #d9534f; /* Vermelho clássico para erro */
-    --color-warning: #f0ad4e; /* Amarelo dourado moderno */
+    --color-success: #27a87d;
+    --color-danger: #d9534f;
+    --color-warning: #f0ad4e;
+
+    --radius-lg: 12px;
+    --radius-md: 10px;
+    --radius-sm: 8px;
   }
 
   .dark {
