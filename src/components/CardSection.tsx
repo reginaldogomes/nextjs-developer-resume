@@ -32,22 +32,22 @@ export const CardsSection: React.FC = () => {
         {cardsData.map(({ title, description, buttonLabel, linkTo }) => (
           <div
             key={title}
-            className="bg-card rounded-lg p-6 shadow-md border border-gray-200"
+            className="bg-card rounded-lg p-6 shadow-md border"
             role="region"
             aria-labelledby={`${title.toLowerCase()}-title`}
           >
             <h2
               id={`${title.toLowerCase()}-title`}
-              className="font-mono font-bold text-lg mb-3"
+              className="font-mono font-bold text-lg mb-3 text-accent"
             >
               {title}
             </h2>
-            <p className="font-mono text-gray-700 mb-5 whitespace-pre-line">
+            <p className="font-mono text- mb-5 whitespace-pre-line">
               {description}
             </p>
             <Link
               href={linkTo}
-              className="bg-accent hover:bg-accent text-white font-mono text-sm py-2 px-4 rounded transition"
+              className="bg-accent hover:bg-accent/85 text-white font-mono text-sm py-2 px-4 rounded transition"
               aria-label={`Botão para ${buttonLabel} da seção ${title}`}
             >
               {buttonLabel}
