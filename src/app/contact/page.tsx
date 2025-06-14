@@ -66,7 +66,7 @@ export default function ContactPage() {
           href={contactData.whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white border border-border rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center gap-2"
+          className="bg-card border border-border rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center gap-2"
         >
           <FaWhatsapp className="text-primary text-2xl" />
           <span className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
@@ -77,7 +77,7 @@ export default function ContactPage() {
           </span>
         </a>
 
-        <div className="bg-white border border-border rounded-xl p-6 text-center shadow-sm flex flex-col items-center gap-2">
+        <div className="bg-card border border-border rounded-xl p-6 text-center shadow-sm flex flex-col items-center gap-2">
           <FaEnvelope className="text-primary text-2xl" />
           <span className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             E-mail
@@ -85,7 +85,7 @@ export default function ContactPage() {
           <span className="text-sm text-foreground">{contactData.email}</span>
         </div>
 
-        <div className="bg-white border border-border rounded-xl p-6 text-center shadow-sm flex flex-col items-center gap-2">
+        <div className="bg-card border border-border rounded-xl p-6 text-center shadow-sm flex flex-col items-center gap-2">
           <FaMapMarkerAlt className="text-primary text-2xl" />
           <span className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             Localização
@@ -101,7 +101,7 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="bg-white border border-border rounded-xl p-8 shadow space-y-6"
+        className="bg-card border border-border rounded-xl p-8 shadow space-y-6"
       >
         <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
           <FaPaperPlane className="text-primary" />

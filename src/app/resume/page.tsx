@@ -99,7 +99,7 @@ const Page = () => (
       {sections.map(({ title, content, icon }, index) => (
         <motion.div
           key={title}
-          className="bg-white border border-border p-6 rounded-xl shadow"
+          className="bg-card border border-border p-6 rounded-xl shadow"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -127,7 +127,7 @@ const Page = () => (
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="bg-white border border-border p-6 rounded-xl shadow"
+        className="bg-card border border-border p-6 rounded-xl shadow"
       >
         <div className="flex items-center gap-3 mb-4">
           <FaTools className="text-primary" />
