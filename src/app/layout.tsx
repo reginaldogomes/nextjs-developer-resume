@@ -10,6 +10,7 @@ import FloatingButton from '@/components/FloatingButton'
 import { usePathname } from 'next/navigation'
 
 import { sourceCodePro } from './fonts'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function RootLayout({
   children,
@@ -20,7 +21,7 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className={`${sourceCodePro.variable}`}>
-      <body className="font-mono dark bg-surface">
+      <body className="font-mono bg-surface">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N78BQVKX"
@@ -32,7 +33,10 @@ export default function RootLayout({
 
         <GoogleTagManager gtmId="GTM-N78BQVKX" />
         <Header />
-        <Main>{children}</Main>
+        <Main>
+          {children}
+          <ThemeToggle />
+        </Main>
         <Footer />
         {pathname !== '/' && <FloatingButton />}
       </body>
