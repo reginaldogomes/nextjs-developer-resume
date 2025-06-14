@@ -4,23 +4,23 @@ export function useTheme() {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
-    const root = document.documentElement
-    const savedTheme = localStorage.getItem('theme')
-    const systemPrefersDark = window.matchMedia(
+    const html = document.documentElement
+    const saved = localStorage.getItem('theme')
+    const prefersDark = window.matchMedia(
       '(prefers-color-scheme: dark)'
     ).matches
 
-    const shouldUseDark =
-      savedTheme === 'dark' || (!savedTheme && systemPrefersDark)
-    root.classList.toggle('dark', shouldUseDark)
-    setIsDark(shouldUseDark)
+    const enabled = saved === 'dark' || (!saved && prefersDark)
+    html.classList.toggle('dark', enabled)
+    setIsDark(enabled)
   }, [])
 
   const toggleTheme = () => {
-    const root = document.documentElement
-    const isDarkMode = root.classList.toggle('dark')
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light')
-    setIsDark(isDarkMode)
+    const html = document.documentElement
+    const enabled = !html.classList.contains('dark')
+    html.classList.toggle('dark', enabled)
+    localStorage.setItem('theme', enabled ? 'dark' : 'light')
+    setIsDark(enabled)
   }
 
   return { isDark, toggleTheme }
