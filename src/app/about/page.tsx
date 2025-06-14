@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const PageHeadData = {
   title: 'Sobre',
   description:
-    'Um breve panorama sobre quem sou, minha trajetória profissional e o caminho que trilhei até aqui em busca de crescimento, aprendizado e realizações.',
+    'Um breve panorama sobre quem sou e a minha trajetória profissional.',
 }
 
 const userData = {
@@ -33,7 +33,7 @@ export default function Page() {
         description={PageHeadData.description}
       />
       <motion.div
-        className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-12"
+        className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
