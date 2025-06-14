@@ -9,7 +9,7 @@ const PageHeadData = {
 
 const Page = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-16 space-y-12">
+    <section className="max-w-5xl mx-auto px-4">
       <PageHead
         title={PageHeadData.title}
         description={PageHeadData.description}
