@@ -44,30 +44,7 @@
     @apply bg-background text-foreground;
   }
 
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 220 80% 60%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 280 65% 60%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 5% 85%;
-    --muted-foreground: 240 5% 50%;
-    --accent: 48 100% 50%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5% 85%;
-    --input: 240 5% 85%;
-    --ring: 240 80% 60%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
+  .light {
     --color-background: #f5f7fa; /* Fundo geral bem claro */
     --color-surface: #ffffff; /* Cartões, seções, blocos */
     --color-border: #e3e8ee; /* Bordas, divisórias, inputs */
@@ -84,6 +61,25 @@
     --color-success: #27a87d; /* Verde suave para sucesso */
     --color-danger: #d9534f; /* Vermelho clássico para erro */
     --color-warning: #f0ad4e; /* Amarelo dourado moderno */
+  }
+
+  .dark {
+    --color-background: #0f1215; /* Fundo geral escuro */
+    --color-surface: #1a1d21; /* Cartões, seções, blocos */
+    --color-border: #2c3238; /* Bordas, divisórias, inputs */
+    --color-foreground: #f1f5f9; /* Texto principal claro */
+    --color-muted: #9ca3af; /* Texto secundário / detalhes */
+
+    --color-accent: #4dc4dd; /* Azul acentuado mais claro */
+    --color-accent-light: #193b44; /* Versão mais clara para hover/backgrounds */
+    --color-accent-dark: #007c91; /* Versão forte para interações */
+
+    --color-primary: #00bcd4; /* Azul mais vibrante para destaque */
+    --color-secondary: #7a9ea8; /* Azul acinzentado elegante mais claro */
+
+    --color-success: #3fd3aa; /* Verde suave claro para sucesso */
+    --color-danger: #ff6b6b; /* Vermelho claro mais vibrante */
+    --color-warning: #ffc66e; /* Amarelo dourado claro */
   }
 }
 

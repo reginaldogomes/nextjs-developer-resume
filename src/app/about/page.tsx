@@ -41,7 +41,7 @@ export default function Page() {
         {sections.map((section, index) => (
           <motion.section
             key={index}
-            className="bg-white text-foreground border border-border rounded-2xl p-6 shadow-md"
+            className="bg-card text-foreground border border-border rounded-2xl p-6 shadow-md"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

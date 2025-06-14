@@ -16,7 +16,7 @@ const sobreData = {
 
 const SobreResumo = () => {
   return (
-    <section className="bg-white border border-border p-6 rounded-xl shadow">
+    <section className="bg-card border border-border p-6 rounded-xl shadow">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
