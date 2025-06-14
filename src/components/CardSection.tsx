@@ -32,7 +32,7 @@ export const CardsSection: React.FC = () => {
         {cardsData.map(({ title, description, buttonLabel, linkTo }) => (
           <div
             key={title}
-            className="bg-white rounded-lg p-6 shadow-md border border-gray-200"
+            className="bg-card rounded-lg p-6 shadow-md border border-gray-200"
             role="region"
             aria-labelledby={`${title.toLowerCase()}-title`}
           >
