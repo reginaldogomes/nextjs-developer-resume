@@ -5,9 +5,9 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 const sobreData = {
-  titulo: 'Quem sou eu',
+  titulo: 'Sobre',
   resumo:
-    'Com mais de 20 anos de experiência em produtos digitais, atuei na criação de interfaces modernas, acessíveis e centradas no usuário. Meu foco é unir design, tecnologia e estratégia para entregar soluções que fazem a diferença.',
+    'Profissional com mais de 20 anos de experiência em tecnologia, especializado em design de interfaces e desenvolvimento web. Natural de Pirapora e residente em Belo Horizonte, está em formação em Gestão da TI, unindo visão estratégica a soluções digitais. Apaixonado por tecnologia, natureza e música.',
   link: {
     href: '/about',
     texto: 'Saiba mais sobre mim',
@@ -27,7 +27,7 @@ const SobreResumo = () => {
           {sobreData.titulo}
         </h2>
 
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-muted leading-relaxed whitespace-pre-line text-justify max-w-2xl mx-auto">
           {sobreData.resumo}
         </p>
 

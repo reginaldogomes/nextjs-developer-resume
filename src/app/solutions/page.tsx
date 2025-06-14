@@ -3,13 +3,12 @@ import Services from '@/components/Services'
 
 const PageHeadData = {
   title: 'Serviços',
-  description:
-    'Ofereço soluções personalizadas e inovadoras em tecnologia. Entre em contato pelos canais abaixo para juntos criarmos resultados significativos.',
+  description: 'Ofereço soluções personalizadas e inovadoras em tecnologia.',
 }
 
 const Page = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4">
+    <section className="max-w-5xl mx-auto px-4 py-16 space-y-12">
       <PageHead
         title={PageHeadData.title}
         description={PageHeadData.description}

@@ -38,7 +38,6 @@ export default function RootLayout({
           <ThemeToggle />
         </Main>
         <Footer />
-        {pathname !== '/' && <FloatingButton />}
       </body>
     </html>
   )
