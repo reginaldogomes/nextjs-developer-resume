@@ -32,7 +32,7 @@ const services = [
     icon: '🚀',
     title: 'Performance',
     description:
-      'Sites rápidos, acessíveis e otimizados para a melhor experiência do usuário',
+      'Sites rápidos, acessíveis e otimizados para a melhor experiência do usuário.',
     link: '/servicos/performance-acessibilidade',
   },
   {
@@ -61,12 +61,19 @@ const services = [
       'Estratégias Digitais, Integração com APIs, CRMs e automações.',
     link: '/servicos/integracoes-web',
   },
+  {
+    icon: '🛒',
+    title: 'E-commerce',
+    description:
+      'Desenvolvimento de lojas virtuais modernas, seguras e otimizadas para conversão.',
+    link: '/servicos/ecommerce',
+  },
 ]
 
 export default function Services() {
   return (
-    <section className="w-full px-6 bg-background text-foreground">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
+    <section className="w-full px-4 sm:px-6 lg:px-8 bg-background text-foreground">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <motion.div
             key={index}
@@ -75,30 +82,27 @@ export default function Services() {
             transition={{ duration: 0.4, delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <Card className="p-6 text-left shadow-sm hover:shadow-md border border-border bg-card transition">
-              <h3 className="text-xl font-semibold flex items-center gap-2 mb-2">
-                <span className="text-2xl">{service.icon}</span> {service.title}
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                {service.description}
-              </p>
-              <Link
-                href={service.link}
-                className="inline-flex items-center gap-1 text-primary text-sm mt-4 hover:underline"
-              >
-                Saiba mais <FiArrowRight className="w-4 h-4" />
-              </Link>
+            <Card className="p-6 h-full flex flex-col justify-between border border-border bg-card shadow-sm hover:shadow-md transition">
+              <div>
+                <h3 className="text-xl font-semibold flex items-center gap-2 mb-3">
+                  <span className="text-2xl">{service.icon}</span>
+                  {service.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+              <div className="mt-6">
+                <Link
+                  href={service.link}
+                  className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:underline transition-colors"
+                >
+                  Saiba mais <FiArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </Card>
           </motion.div>
         ))}
-      </div>
-
-      <div className="flex justify-center mt-16">
-        <Link href="/contact">
-          <Button className="px-6 py-2 text-base font-medium">
-            Solicitar proposta personalizada
-          </Button>
-        </Link>
       </div>
     </section>
   )
