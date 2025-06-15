@@ -10,19 +10,15 @@ const PageHeadData = {
 
 const userData = {
   about:
-    'Sou natural de Pirapora, Minas Gerais, e atualmente resido em Belo Horizonte. Tenho 45 anos e atuo na área de tecnologia há mais de duas décadas, com forte especialização em design de interfaces e desenvolvimento web. Atualmente, estou em processo de graduação em Gestão da Tecnologia da Informação, ampliando ainda mais minha visão estratégica sobre soluções digitais e infraestrutura tecnológica.\n\nSou apaixonado por tecnologia, natureza e música. Nos meus momentos livres, gosto de viajar para conhecer novos lugares, explorar diferentes culturas e praticar esportes ao ar livre. Acredito que essas vivências fortalecem minha criatividade e me ajudam a manter o equilíbrio entre a vida pessoal e profissional.',
+    'Sou natural de Pirapora, Minas Gerais, tenho 45 anos e atualmente resido em Belo Horizonte. Atuo na área de tecnologia com ampla experiência em design de interfaces e desenvolvimento web front-end, participando de projetos voltados à criação de soluções digitais funcionais, seguras e bem estruturadas.\n\nAtualmente, estou cursando a graduação em Gestão da Tecnologia da Informação, com o objetivo de fortalecer minha atuação estratégica em ambientes digitais e ampliar meus conhecimentos em infraestrutura, segurança e governança de TI.\n\nFora do ambiente profissional, tenho interesse por viagens, esportes ao ar livre e música. Valorizo o equilíbrio entre vida pessoal e trabalho, mantendo uma rotina que contribui para a disciplina e a consistência no desempenho profissional.',
 
   journey:
-    'Minha carreira começou em Brasília, no início dos anos 2000, quando tive a oportunidade de atuar como web designer. Essa experiência marcou o início da minha jornada no desenvolvimento web, área pela qual me apaixonei e sigo até hoje.\n\nDesde então, passei por empresas de diferentes segmentos e regiões do Brasil, incluindo capitais como São Paulo, Rio de Janeiro, Curitiba, Florianópolis e Belo Horizonte. Atuei em projetos relevantes em empresas como Softplan, Saraiva, Locaweb e Squadra, construindo uma base sólida em tecnologia e design digital.',
-
-  skills:
-    'Com mais de 20 anos dedicados ao desenvolvimento web, construí uma trajetória rica e diversificada, sempre com foco na criação de produtos digitais que realmente fazem a diferença para os usuários. Minha especialidade está no front-end e no design de interfaces, onde busco unir funcionalidade, usabilidade e estética para entregar experiências significativas.\n\nAlém disso, minha experiência inclui também o back-end e a infraestrutura em nuvem, o que me permite ter uma visão completa do ciclo de desenvolvimento e garantir que as soluções sejam robustas e escaláveis. Hoje, me vejo como um profissional full stack, apaixonado por transformar ideias em produtos digitais modernos e eficientes, sempre com o usuário no centro.',
+    'Minha trajetória profissional é marcada por uma vivência abrangente nas diversas áreas da Tecnologia da Informação. Iniciei com foco em design para web, o que despertou meu interesse pelo desenvolvimento front-end e, com o tempo, me levou a explorar também o back-end e a computação em nuvem. Essa jornada me proporcionou uma compreensão sólida de todas as camadas envolvidas no desenvolvimento de sistemas.\n\nAo longo da minha carreira, tive uma atuação expressiva em projetos de e-commerce, contribuindo para o desenvolvimento de plataformas robustas, funcionais e orientadas à conversão. Trabalhei em empresas de tecnologia, agências web e consultorias de marketing, atuando em cidades como Brasília, São Paulo, Rio de Janeiro, Curitiba, Florianópolis e Belo Horizonte.\n\nCom uma visão técnica integrada, participo de projetos com entendimento completo do ciclo de desenvolvimento, da interface ao ambiente de produção, sempre com foco na eficiência, na qualidade e na experiência do usuário.',
 }
 
 const sections = [
   { title: 'Sobre Mim', content: userData.about },
   { title: 'Minha Trajetória', content: userData.journey },
-  { title: 'Meus Conhecimentos', content: userData.skills },
 ]
 
 export default function Page() {
