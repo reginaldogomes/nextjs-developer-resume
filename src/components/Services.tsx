@@ -2,70 +2,73 @@
 
 import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { FiArrowRight, FiCpu, FiSearch } from 'react-icons/fi'
+import { FaPalette, FaRobot, FaShoppingCart } from 'react-icons/fa'
+import { HiOutlineRocketLaunch, HiOutlineGlobeAlt } from 'react-icons/hi2'
+import { AiOutlineAppstore, AiOutlineBarChart } from 'react-icons/ai'
+import { MdOutlineDesignServices } from 'react-icons/md'
 import Link from 'next/link'
-import { FiArrowRight } from 'react-icons/fi'
 
 const services = [
   {
-    icon: '🎨',
+    icon: <FaPalette className="text-primary w-5 h-5" />,
     title: 'UI Design',
     description:
       'Criação de interfaces limpas, acessíveis e centradas no usuário.',
     link: '/servicos/ui-design',
   },
   {
-    icon: '⚛️',
+    icon: <FiCpu className="text-primary w-5 h-5" />,
     title: 'Front-end',
     description:
       'Aplicações responsivas com React, Next.js e melhores práticas.',
     link: '/servicos/frontend',
   },
   {
-    icon: '🧩',
+    icon: <AiOutlineAppstore className="text-primary w-5 h-5" />,
     title: 'Design Systems',
     description:
       'Sistemas consistentes com componentes reutilizáveis e escaláveis.',
     link: '/servicos/design-systems',
   },
   {
-    icon: '🚀',
+    icon: <HiOutlineRocketLaunch className="text-primary w-5 h-5" />,
     title: 'Performance',
     description:
       'Sites rápidos, acessíveis e otimizados para a melhor experiência do usuário.',
     link: '/servicos/performance-acessibilidade',
   },
   {
-    icon: '🤖',
+    icon: <FaRobot className="text-primary w-5 h-5" />,
     title: 'Agentes de IA',
     description: 'Assistentes inteligentes integrados ao seu negócio digital.',
     link: '/servicos/agentes-ia',
   },
   {
-    icon: '📈',
-    title: 'Dados',
+    icon: <AiOutlineBarChart className="text-primary w-5 h-5" />,
+    title: 'Analise de Dados',
     description: 'Transformação de dados em insights valiosos para decisões.',
     link: '/servicos/analise-dados',
   },
   {
-    icon: '🔍',
+    icon: <FiSearch className="text-primary w-5 h-5" />,
     title: 'SEO Técnico',
     description:
       'Otimização do site para melhor ranqueamento e performance nas buscas.',
     link: '/servicos/seo-tecnico',
   },
   {
-    icon: '⚙️',
+    icon: <HiOutlineGlobeAlt className="text-primary w-5 h-5" />,
     title: 'Estratégias',
     description:
       'Estratégias Digitais, Integração com APIs, CRMs e automações.',
     link: '/servicos/integracoes-web',
   },
   {
-    icon: '🛒',
+    icon: <FaShoppingCart className="text-primary w-5 h-5" />,
     title: 'E-commerce',
     description:
-      'Desenvolvimento de lojas virtuais modernas, seguras e otimizadas para conversão.',
+      'Lojas virtuais modernas, seguras e otimizadas para conversão.',
     link: '/servicos/ecommerce',
   },
 ]
@@ -85,10 +88,10 @@ export default function Services() {
             <Card className="p-6 h-full flex flex-col justify-between border border-border bg-card shadow-sm hover:shadow-md transition">
               <div>
                 <h3 className="text-xl font-semibold flex items-center gap-2 mb-3">
-                  <span className="text-2xl">{service.icon}</span>
+                  {service.icon}
                   {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-muted leading-relaxed whitespace-pre-line text-justify">
                   {service.description}
                 </p>
               </div>
