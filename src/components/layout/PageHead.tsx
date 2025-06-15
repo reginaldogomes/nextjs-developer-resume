@@ -20,7 +20,7 @@ export default function PageHead({ title, description }: PageHeadProps) {
   return (
     <div className="text-center">
       <h1 className="text-4xl sm:text-5xl font-bold text-primary">{title}</h1>
-      <p className="text-muted leading-relaxed text-2xl whitespace-pre-line mt-2 w-3xl mx-auto">
+      <p className="text-muted leading-relaxed text-2xl whitespace-pre-line mt-2 mx-auto">
         {description}
       </p>
     </div>
