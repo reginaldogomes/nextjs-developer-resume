@@ -46,7 +46,7 @@ const services = [
   },
   {
     icon: <AiOutlineBarChart className="text-primary w-5 h-5" />,
-    title: 'Dados',
+    title: 'Analise de Dados',
     description: 'Transformação de dados em insights valiosos para decisões.',
     link: '/servicos/analise-dados',
   },
@@ -91,7 +91,7 @@ export default function Services() {
                   {service.icon}
                   {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-muted leading-relaxed whitespace-pre-line text-justify">
                   {service.description}
                 </p>
               </div>
