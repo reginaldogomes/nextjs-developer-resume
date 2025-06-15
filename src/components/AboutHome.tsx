@@ -7,7 +7,7 @@ import Link from 'next/link'
 const sobreData = {
   titulo: 'Sobre',
   resumo:
-    'Profissional com mais de 20 anos de experiência em tecnologia, especializado em design de interfaces e desenvolvimento web. Natural de Pirapora e residente em Belo Horizonte, está em formação em Gestão da TI, unindo visão estratégica a soluções digitais. Apaixonado por tecnologia, natureza e música.',
+    'Sou natural de Pirapora, Minas Gerais, tenho 45 anos e atualmente resido em Belo Horizonte. Atuo na área de tecnologia com ampla experiência em design de interfaces e desenvolvimento web front-end, participando de projetos voltados à criação de soluções digitais funcionais, seguras e bem estruturadas.',
   link: {
     href: '/about',
     texto: 'Saiba mais sobre mim',
