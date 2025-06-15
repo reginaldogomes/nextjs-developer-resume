@@ -116,7 +116,7 @@ const Page = () => (
               ))}
             </ul>
           ) : (
-            <p className="text-muted-foreground text-sm text-justify whitespace-pre-line">
+            <p className="text-muted leading-relaxed whitespace-pre-line text-justify">
               {content}
             </p>
           )}
