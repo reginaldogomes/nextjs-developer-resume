@@ -5,7 +5,7 @@ interface PageHeadProps {
   description?: string
 }
 
-// Função opcional para uso em arquivos de página (não será usada diretamente no componente)
+// Função para metadados da página (SEO)
 export function generateMetadata({
   title,
   description,
@@ -18,11 +18,15 @@ export function generateMetadata({
 
 export default function PageHead({ title, description }: PageHeadProps) {
   return (
-    <div className="text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold text-primary">{title}</h1>
-      <p className="text-muted leading-relaxed text-2xl whitespace-pre-line mt-2 mx-auto">
-        {description}
-      </p>
+    <div className="text-center max-w-4xl mx-auto px-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+        {title}
+      </h1>
+      {description && (
+        <p className="mt-4 text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
+          {description}
+        </p>
+      )}
     </div>
   )
 }

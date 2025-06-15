@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({
     }}
   >
     {/* Overlay com opacidade e desfoque */}
-    <div className="absolute inset-0 bg-accent/90 backdrop-blur-none z-0" />
+    <div className="absolute inset-0 bg-accent/85 backdrop-blur-none z-0" />
 
     {/* Conteúdo animado */}
     <motion.div
