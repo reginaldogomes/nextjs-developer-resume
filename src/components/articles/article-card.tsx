@@ -1,5 +1,6 @@
-'use client'
+// src/components/articles/article-card.tsx
 
+// Melhoria: Removido o 'use client' pois o componente não precisa ser renderizado no cliente.
 import { FiArrowRight } from 'react-icons/fi'
 import { format } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
@@ -26,7 +27,8 @@ export function ArticleCard({ article }: { article: Article }) {
       </p>
       <p className="text-sm text-muted mb-4">{article.resumo}</p>
 
-      <CustomLink href={`/articles/${article.slug}`} variant={'solid'}>
+      {/* Correção: Sintaxe do href e consistência da URL */}
+      <CustomLink href={`/artigos/${article.slug}`} variant={'solid'}>
         Ler artigo <FiArrowRight className="w-4 h-4" />
       </CustomLink>
     </div>

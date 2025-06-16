@@ -1,3 +1,4 @@
+// src/app/artigos/page.tsx
 import { Metadata } from 'next'
 import { articles } from '@/data/articles'
 import { ArticleCard } from '@/components/articles/article-card'
