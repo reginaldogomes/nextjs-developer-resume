@@ -33,7 +33,7 @@ export default function Home() {
     <>
       <Hero
         name="Reginaldo Gomes"
-        title="Front-end Developer · UX/UI · Cloud Solutions"
+        title="Front-end Developer · UI Design · Interface Digital"
         backgroundImage="/images/hero_bg.webp"
         message="Desenvolvedor front-end com forte atuação no design e construção de interfaces digitais modernas, acessíveis e orientadas à experiência do usuário. Integro estética e funcionalidade para criar soluções ágeis, escaláveis e alinhadas às boas práticas de performance web."
         ctaLinks={[{ label: 'Fale comigo', url: '/contact' }]}
