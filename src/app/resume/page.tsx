@@ -19,14 +19,14 @@ const PageHeadData = {
 
 const userData = {
   resumo:
-    'Desenvolvedor Web com foco em front-end, especializado em React e criação de interfaces modernas, responsivas e performáticas.\n\nExperiência sólida em desenvolvimento de aplicações com React, Next.js, TypeScript e Vite, seguindo boas práticas de UX/UI, acessibilidade, SEO técnico e testes de interface. Atua com integração de APIs REST/GraphQL, versionamento com Git e deploy automatizado (Vercel, GitHub Actions, Azure).\n\nPossui visão voltada à experiência do usuário e qualidade de entrega, contribuindo com soluções escaláveis e alinhadas aos objetivos de negócio.',
+    'Atuo no desenvolvimento de interfaces web modernas, responsivas e escaláveis, utilizando React, Next.js, Vite e TypeScript. Aplico práticas avançadas de UX/UI, SEO técnico, acessibilidade e testes automatizados para garantir a qualidade e a performance das aplicações.\n\nTenho conhecimento consolidado das principais bibliotecas do ecossistema React, e ferramentas de gerenciamento de estado como Redux Toolkit e Zustand, além de experiência sólida em HTML5, CSS3, JavaScript ES6+ e TypeScript.\n\nPossuo experiência prática com infraestrutura em nuvem, especialmente na plataforma Microsoft Azure (Azure Web Apps, Static Web Apps e Azure Functions), configurando pipelines CI/CD com Docker, GitHub Actions, Vercel e Cloudflare para automação e deploy seguro.\n\nTambém atuo com monitoramento e observabilidade de aplicações utilizando ferramentas como New Relic e Lighthouse, garantindo análise contínua de performance, identificação de gargalos e melhoria da experiência do usuário.\n\nSou capaz de atuar com autonomia em projetos, colaborar efetivamente com times multidisciplinares e entregar soluções alinhadas às necessidades do negócio, prezando por código limpo, performance otimizada e escalabilidade.',
   objetivo:
-    'Atuar em projetos desafiadores que contribuam para meu desenvolvimento técnico e estratégico, com foco em front-end e soluções em nuvem.\n\nBusco oportunidades que promovam evolução contínua e permitam assumir responsabilidades crescentes, incluindo a liderança técnica de times e projetos de alta relevância.',
+    'Atuar em projetos desafiadores que estimulem meu crescimento técnico, estratégico e de gestão, com foco em desenvolvimento front-end e soluções em nuvem.\n\nBusco oportunidades que favoreçam a evolução contínua das minhas habilidades, possibilitando a assunção de responsabilidades progressivas, incluindo liderança técnica, gestão de equipes e condução de projetos estratégicos de alta complexidade e impacto.',
   experiencia: [
     'Analista Desenvolvedor Front-end - BH Solutions (2023 - 2025)',
     'Analista Desenvolvedor Front-end - Locaweb (2022 - 2023)',
     'Analista Desenvolvedor Web - Cozinhas Itatiaia (2021 - 2022)',
-    'Web Designer - Softplan (2021 - 2022)',
+    'Web Designer - Softplan (2013 - 2014)',
   ],
   educacao:
     'Curso Superior de Tecnologia (CST)\nGestão da Tecnologia da Informação\nUniCesumar - 2024 / 2026',
