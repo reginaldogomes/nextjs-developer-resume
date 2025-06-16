@@ -1,3 +1,5 @@
+// app/articles/[slug]/page.tsx
+
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { articles } from '@/data/articles'
@@ -5,19 +7,24 @@ import { format } from 'date-fns'
 import { enUS } from 'date-fns/locale'
 import ReactMarkdown from 'react-markdown'
 
-interface ArticlePageProps {
+// Tipagem explícita para os params vindos da rota dinâmica
+type PageProps = {
   params: {
     slug: string
   }
 }
 
+// Gera os caminhos estáticos com base nos slugs
 export function generateStaticParams() {
   return articles.map((article) => ({
     slug: article.slug,
   }))
 }
 
-export function generateMetadata({ params }: ArticlePageProps): Metadata {
+// Gera metadados da página para SEO e social
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const article = articles.find((a) => a.slug === params.slug)
 
   if (!article) {
@@ -44,7 +51,8 @@ export function generateMetadata({ params }: ArticlePageProps): Metadata {
   }
 }
 
-export default function ArticlePage({ params }: ArticlePageProps) {
+// Página principal do artigo
+export default function ArticlePage({ params }: PageProps) {
   const article = articles.find((a) => a.slug === params.slug)
 
   if (!article) return notFound()
