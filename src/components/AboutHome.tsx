@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import { CustomLink } from './CustomLink'
 
 const sobreData = {
   titulo: 'Sobre',
@@ -32,9 +31,9 @@ const SobreResumo = () => {
         </p>
 
         <div className="pt-4">
-          <Button asChild size="lg" className="px-6 text-base shadow-lg">
-            <Link href={sobreData.link.href}>{sobreData.link.texto}</Link>
-          </Button>
+          <CustomLink href={sobreData.link.href} variant={'outline'}>
+            {sobreData.link.texto}
+          </CustomLink>
         </div>
       </motion.div>
     </section>

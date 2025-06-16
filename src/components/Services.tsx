@@ -2,12 +2,11 @@
 
 import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
-import { FiArrowRight, FiCpu, FiSearch } from 'react-icons/fi'
+import { FiCpu, FiSearch } from 'react-icons/fi'
 import { FaPalette, FaRobot, FaShoppingCart } from 'react-icons/fa'
 import { HiOutlineRocketLaunch, HiOutlineGlobeAlt } from 'react-icons/hi2'
 import { AiOutlineAppstore, AiOutlineBarChart } from 'react-icons/ai'
-import { MdOutlineDesignServices } from 'react-icons/md'
-import Link from 'next/link'
+import { CustomLink } from './CustomLink'
 
 const services = [
   {
@@ -96,12 +95,9 @@ export default function Services() {
                 </p>
               </div>
               <div className="mt-6">
-                <Link
-                  href={service.link}
-                  className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:underline transition-colors"
-                >
-                  Saiba mais <FiArrowRight className="w-4 h-4" />
-                </Link>
+                <CustomLink href={service.link} variant={'solid'}>
+                  Saiba Mais
+                </CustomLink>
               </div>
             </Card>
           </motion.div>
