@@ -26,7 +26,7 @@ const userData = {
     'Analista Desenvolvedor Front-end - BH Solutions (2023 - 2025)',
     'Analista Desenvolvedor Front-end - Locaweb (2022 - 2023)',
     'Analista Desenvolvedor Web - Cozinhas Itatiaia (2021 - 2022)',
-    'Web Designer - Softplan (2021 - 2022)',
+    'Web Designer - Softplan (2013 - 2014)',
   ],
   educacao:
     'Curso Superior de Tecnologia (CST)\nGestão da Tecnologia da Informação\nUniCesumar - 2024 / 2026',
