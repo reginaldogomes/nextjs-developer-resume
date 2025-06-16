@@ -9,6 +9,7 @@ const menuItems = [
   { href: '/resume', label: 'Currículo' },
   { href: '/solutions', label: 'Serviços' },
   { href: '/contact', label: 'Contato' },
+  { href: '/articles', label: 'Artigos' },
 ]
 
 const MenuLinks = ({ handleLinkClick }: { handleLinkClick?: () => void }) => {

@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import { CustomLink } from './CustomLink'
 
 interface HeroProps {
   name: string
@@ -63,18 +62,9 @@ const Hero: React.FC<HeroProps> = ({
       >
         {ctaLinks.map((cta, index) => (
           <motion.div key={index} whileHover={{ scale: 1.05 }}>
-            <Link href={cta.url} passHref>
-              <Button
-                variant={index === 0 ? 'default' : 'outline'}
-                className={`px-6 py-3 text-base sm:text-lg ${
-                  index === 0
-                    ? 'bg-primary text-white'
-                    : 'border-white text-white hover:bg-white/10'
-                }`}
-              >
-                {cta.label}
-              </Button>
-            </Link>
+            <CustomLink href={cta.url} variant={'solid'}>
+              {cta.label}
+            </CustomLink>
           </motion.div>
         ))}
       </motion.div>

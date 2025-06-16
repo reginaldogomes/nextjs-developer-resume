@@ -1,5 +1,4 @@
-import React from 'react'
-import Link from 'next/link'
+import { CustomLink } from './CustomLink'
 
 type CardData = {
   title: string
@@ -42,16 +41,12 @@ export const CardsSection: React.FC = () => {
             >
               {title}
             </h2>
-            <p className="font-mono text- mb-5 whitespace-pre-line">
+            <p className="text-muted leading-relaxed whitespace-pre-line mb-5">
               {description}
             </p>
-            <Link
-              href={linkTo}
-              className="bg-accent hover:bg-accent/85 text-white font-mono text-sm py-2 px-4 rounded transition"
-              aria-label={`Botão para ${buttonLabel} da seção ${title}`}
-            >
+            <CustomLink href={linkTo} variant={'outline'}>
               {buttonLabel}
-            </Link>
+            </CustomLink>
           </div>
         ))}
       </div>
