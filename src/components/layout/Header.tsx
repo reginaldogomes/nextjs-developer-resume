@@ -51,7 +51,7 @@ const Header = () => {
             href="/"
             className="text-xl font-bold tracking-tighter hover:opacity-80 transition-opacity"
           >
-            Reginaldo<span className="text-primary">Gomes</span>
+            Reginaldo <span className="text-primary">Gomes</span>
           </Link>
 
           {/* Desktop Navigation */}

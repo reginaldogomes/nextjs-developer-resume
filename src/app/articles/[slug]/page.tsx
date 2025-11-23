@@ -3,14 +3,15 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 // Gera os metadados da página (título, descrição) para SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = await getPostData(params.slug)
+  const { slug } = await params
+  const post = await getPostData(slug)
   return {
     title: post.title,
     description: post.excerpt,
@@ -26,7 +27,7 @@ export async function generateStaticParams() {
 }
 
 export default async function PostPage({ params }: Props) {
-  const { slug } = params
+  const { slug } = await params
   let post: PostData
 
   try {

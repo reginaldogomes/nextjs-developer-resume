@@ -1,5 +1,7 @@
+import Container from '@/components/ui/Container'
 import PageHead from '@/components/layout/PageHead'
-import Services from '@/components/Services'
+import ServicesCards from '@/components/sections/ServicesCards'
+import servicesData from '@/data/services.json'
 
 const PageHeadData = {
   title: 'Serviços',
@@ -8,12 +10,14 @@ const PageHeadData = {
 
 const Page = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-16 space-y-12">
-      <PageHead
-        title={PageHeadData.title}
-        description={PageHeadData.description}
-      />
-      <Services />
+    <section className="w-full py-24">
+      <Container>
+        <PageHead
+          title={PageHeadData.title}
+          description={PageHeadData.description}
+        />
+        <ServicesCards services={servicesData} />
+      </Container>
     </section>
   )
 }

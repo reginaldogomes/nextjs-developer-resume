@@ -18,7 +18,7 @@ export type PostData = {
 // Define um tipo mais simples para a lista de posts, sem o conteúdo completo
 export type PostPreview = Omit<PostData, 'contentHtml'>
 
-const postsDirectory = path.join(process.cwd(), 'content/posts')
+const postsDirectory = path.join(process.cwd(), 'src/content/posts')
 
 export function getSortedPostsData(): PostPreview[] {
   // Pega os nomes dos arquivos na pasta /content/posts

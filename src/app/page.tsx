@@ -13,7 +13,7 @@ import aboutData from '@/data/about.json'
 
 export const metadata = createMetadata({
   title:
-    'Reginaldo Gomes | Desenvolvedor Fullstack | JavaScript/TypeScript Specialist',
+    'Reginaldo Gomes | Desenvolvedor Fullstack | JavaScript/TypeScript',
   description:
     'Desenvolvedor Fullstack especializado em React, Node.js, TypeScript e soluções em nuvem. Crio aplicações completas, escaláveis e performáticas.',
   path: '/',
