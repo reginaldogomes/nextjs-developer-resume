@@ -1,47 +1,37 @@
-import Hero from '@/components/Hero'
-import AboutHome from '@/components/AboutHome'
+import Hero from '@/components/sections/Hero'
+import ProjectsGrid from '@/components/sections/ProjectsGrid'
+import ServicesCards from '@/components/sections/ServicesCards'
+import ResumeSection from '@/components/sections/ResumeSection'
+import Skills from '@/components/Skills'
 
 import { createMetadata } from '@/lib/seo'
-import CardsSection from '@/components/CardSection'
+
+// Import data
+import projectsData from '@/data/projects.json'
+import servicesData from '@/data/services.json'
+import aboutData from '@/data/about.json'
 
 export const metadata = createMetadata({
-  title: 'Reginaldo Gomes | Desenvolvedor Front-end | UX/UI | Web Interface',
+  title:
+    'Reginaldo Gomes | Desenvolvedor Fullstack | JavaScript/TypeScript Specialist',
   description:
-    'Desenvolvedor front-end com foco em React, Next.js, TypeScript e soluções em nuvem. Crio experiências modernas, rápidas e acessíveis.',
-  path: '/about',
+    'Desenvolvedor Fullstack especializado em React, Node.js, TypeScript e soluções em nuvem. Crio aplicações completas, escaláveis e performáticas.',
+  path: '/',
 })
-
-const aboutMeCards = [
-  {
-    title: 'Currículo',
-    description:
-      'Resumo da minha experiência profissional, com foco em desenvolvimento de soluções digitais estratégicas que entregam valor e resultados concretos para empresas e clientes.',
-    buttonText: 'Ver detalhes',
-    buttonLink: '/resume',
-  },
-  {
-    title: 'Serviços',
-    description:
-      'Descrição dos serviços que ofereço, fundamentados em ampla atuação corporativa em tecnologia, combinando expertise técnica e inovação para impulsionar negócios.',
-    buttonText: 'Ver detalhes',
-    buttonLink: '/solutions',
-  },
-]
 
 export default function Home() {
   return (
     <>
       <Hero
-        name="Reginaldo Gomes"
-        title="Front-end Developer · UI Design · Interface Digital"
-        backgroundImage="/images/hero_bg.webp"
-        message="Desenvolvedor front-end com forte atuação no design e construção de interfaces digitais modernas, acessíveis e orientadas à experiência do usuário. Integro estética e funcionalidade para criar soluções ágeis, escaláveis e alinhadas às boas práticas de performance web."
-        ctaLinks={[{ label: 'Fale comigo', url: '/contact' }]}
+        name={aboutData.name}
+        title={aboutData.title}
+        slogan={aboutData.slogan}
+        image={aboutData.image}
       />
-      <section className="w-full max-w-5xl mx-auto px-4 py-16 space-y-12">
-        <AboutHome />
-        <CardsSection />
-      </section>
+      <Skills />
+      <ServicesCards services={servicesData} />
+      <ProjectsGrid projects={projectsData} />
+      <ResumeSection about={aboutData} />
     </>
   )
 }

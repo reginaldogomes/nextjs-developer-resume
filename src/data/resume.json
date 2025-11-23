@@ -1,37 +1,137 @@
 {
   "name": "Reginaldo Gomes",
-  "title": "Web Development Analyst | Cloud Computing Specialist",
-  "description": "Experienced in creating digital solutions with expertise in JavaScript, TypeScript, Python, and Go, utilizing Clean Architecture, SOLID, and DDD patterns. Specialized in AWS Cloud and front-end development.",
+  "title": "Desenvolvedor Fullstack | JavaScript/TypeScript Specialist",
+  "summary": "Desenvolvedor Fullstack com sólida experiência em criar soluções completas end-to-end utilizando JavaScript/TypeScript. Especializado em React, Next.js no front-end e Node.js, NestJS no back-end. Expertise em arquitetura de software, bancos de dados relacionais e NoSQL, infraestrutura em nuvem (Azure, AWS) e práticas DevOps. Entrego aplicações escaláveis, performáticas e com excelente experiência do usuário.",
+  "objective": "Atuar em projetos fullstack desafiadores que estimulem meu crescimento técnico em todas as camadas da aplicação, com foco no ecossistema JavaScript/TypeScript. Busco oportunidades que favoreçam a evolução contínua como desenvolvedor fullstack, possibilitando a assunção de responsabilidades progressivas, incluindo arquitetura de sistemas, liderança técnica e condução de projetos estratégicos de alta complexidade.",
   "experience": [
     {
-      "role": "Web Development Analyst",
-      "company": "Tech Company",
-      "duration": "2022 - Present",
-      "details": "Working on cloud-based digital solutions, focusing on front-end technologies like React, Next.js, and AWS services."
+      "role": "Analista Desenvolvedor Fullstack",
+      "company": "BH Solutions",
+      "location": "Belo Horizonte, MG",
+      "duration": "2023 - 2025",
+      "type": "Full-time",
+      "description": "Desenvolvimento de soluções digitais completas com foco em inteligência artificial e automação de processos.",
+      "responsibilities": [
+        "Desenvolvimento fullstack com React, Next.js (front-end) e Node.js (back-end)",
+        "Criação e manutenção de APIs REST com Express e NestJS",
+        "Modelagem e gerenciamento de bancos de dados PostgreSQL com Prisma ORM",
+        "Implementação de autenticação e autorização (JWT, OAuth)",
+        "Deploy e gerenciamento de aplicações em Azure (Web Apps, Static Web Apps, Functions)",
+        "Configuração de pipelines CI/CD com GitHub Actions e Docker",
+        "Integração com serviços terceiros e APIs externas",
+        "Otimização de performance full-stack e monitoramento de aplicações"
+      ],
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "NestJS",
+        "PostgreSQL",
+        "Prisma",
+        "Azure",
+        "Docker",
+        "GitHub Actions"
+      ]
     },
     {
-      "role": "Frontend Developer",
-      "company": "Lisait",
+      "role": "Analista Desenvolvedor Fullstack",
+      "company": "Locaweb",
+      "location": "São Paulo, SP",
+      "duration": "2022 - 2023",
+      "type": "Full-time",
+      "description": "Desenvolvimento e manutenção de plataformas de hospedagem e soluções web para milhares de clientes.",
+      "responsibilities": [
+        "Desenvolvimento front-end com React e TypeScript",
+        "Criação de APIs backend com Node.js e Express",
+        "Integração com bancos de dados MySQL e MongoDB",
+        "Implementação de testes automatizados (Jest, Supertest)",
+        "Refatoração de sistemas legados para arquitetura moderna",
+        "Integração com serviços AWS (S3, CloudFront, Lambda, RDS)",
+        "Documentação de APIs com Swagger/OpenAPI"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "AWS",
+        "Docker",
+        "Jest"
+      ]
+    },
+    {
+      "role": "Desenvolvedor Web",
+      "company": "Cozinhas Itatiaia",
+      "location": "Itatiaia, RJ",
       "duration": "2021 - 2022",
-      "details": "Developed web applications using React.js, integrated APIs, and improved application performance."
+      "type": "Full-time",
+      "description": "Desenvolvimento de sistema interno para gestão de produção e e-commerce.",
+      "responsibilities": [
+        "Desenvolvimento de interface web para sistema ERP",
+        "Criação de APIs REST com Node.js",
+        "Integração com banco de dados MySQL",
+        "Desenvolvimento de landing pages e hotsites",
+        "Manutenção de sistemas legados PHP",
+        "Implementação de funcionalidades e-commerce"
+      ],
+      "technologies": [
+        "JavaScript",
+        "Node.js",
+        "HTML5",
+        "CSS3",
+        "MySQL",
+        "PHP",
+        "Bootstrap"
+      ]
+    },
+    {
+      "role": "Web Designer",
+      "company": "Softplan",
+      "location": "Florianópolis, SC",
+      "duration": "2013 - 2014",
+      "type": "Full-time",
+      "description": "Design e desenvolvimento de interfaces para sistemas jurídicos.",
+      "responsibilities": [
+        "Criação de interfaces para sistemas SAJ (Softplan Jurídico)",
+        "Prototipação de telas e fluxos de usuário",
+        "Desenvolvimento front-end com HTML, CSS e JavaScript",
+        "Colaboração com equipe de UX para melhorias de usabilidade"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "Photoshop", "Illustrator"]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor's in Software Engineering",
-      "institution": "University XYZ",
-      "year": "2024"
+      "degree": "Curso Superior de Tecnologia (CST)",
+      "field": "Inteligência Artificial e Machine Learning",
+      "institution": "UniCesumar",
+      "location": "Maringá, PR",
+      "period": "2025 - 2027",
+      "status": "Em andamento",
+      "description": "Formação focada em técnicas de IA, aprendizado de máquina, deep learning e aplicações práticas em soluções digitais, com ênfase em implementação usando JavaScript/TypeScript e Python."
+    },
+    {
+      "degree": "Formação Técnica",
+      "field": "Desenvolvimento Web Fullstack",
+      "institution": "Cursos Livres e Certificações",
+      "location": "Online",
+      "period": "2010 - Presente",
+      "status": "Concluído",
+      "description": "Formação contínua através de cursos especializados em JavaScript, TypeScript, React, Node.js, NestJS, bancos de dados, arquitetura de software e Cloud Computing."
     }
   ],
-  "skills": [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "AWS",
-    "Clean Architecture",
-    "SOLID",
-    "Python",
-    "Go"
+  "certifications": [
+    "Node.js - The Complete Guide (Udemy)",
+    "NestJS: Zero to Hero (Udemy)",
+    "React - The Complete Guide (Udemy)",
+    "Next.js & React - The Complete Guide (Udemy)",
+    "TypeScript for Professionals (Udemy)",
+    "PostgreSQL & Database Design (Udemy)",
+    "Microsoft Azure Fundamentals (AZ-900)",
+    "Docker & Kubernetes: The Practical Guide (Udemy)"
   ]
 }
