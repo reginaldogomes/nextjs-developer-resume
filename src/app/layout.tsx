@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${sourceCodePro.variable}`}
+      className={`dark ${inter.variable} ${sourceCodePro.variable}`}
     >
-      <body className="font-sans bg-surface">
+      <body className="font-sans bg-background text-foreground transition-colors duration-300">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N78BQVKX"

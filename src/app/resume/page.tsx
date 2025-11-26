@@ -33,22 +33,6 @@ const Page = () => {
         />
 
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {resumeData.name}
-          </h1>
-          <p className="text-xl text-primary font-medium mb-4">
-            {resumeData.title}
-          </p>
-          <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {resumeData.summary}
-          </p>
-        </motion.div>
 
         <div className="space-y-16">
           {/* Objetivo */}

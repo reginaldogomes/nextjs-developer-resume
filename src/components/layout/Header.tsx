@@ -41,7 +41,7 @@ const Header = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         scrolled
-          ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-sm py-3'
+          ? 'bg-background/90 backdrop-blur-lg border-b border-border/50 shadow-md py-3'
           : 'bg-transparent py-5'
       )}
     >
@@ -61,13 +61,19 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'text-sm font-medium transition-colors hover:text-primary',
+                  'text-sm font-medium transition-all duration-300 hover:text-primary relative group',
                   pathname === link.href
                     ? 'text-primary'
                     : 'text-muted-foreground'
                 )}
               >
                 {link.name}
+                <span
+                  className={cn(
+                    'absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full',
+                    pathname === link.href && 'w-full'
+                  )}
+                />
               </Link>
             ))}
             <ThemeToggle />
@@ -102,9 +108,9 @@ const Header = () => {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'text-lg font-medium py-2 border-b border-border/50 transition-colors hover:text-primary',
+                    'text-lg font-medium py-3 px-2 border-b border-border/50 transition-all duration-300 hover:text-primary hover:translate-x-2',
                     pathname === link.href
-                      ? 'text-primary'
+                      ? 'text-primary border-primary/50'
                       : 'text-muted-foreground'
                   )}
                 >

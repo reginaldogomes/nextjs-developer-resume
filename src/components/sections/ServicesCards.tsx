@@ -83,20 +83,17 @@ const ServicesCards: React.FC<ServicesCardsProps> = ({ services }) => {
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full hover:border-primary/50 transition-colors duration-300">
+                <Card className="h-full transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:scale-[1.03] will-change-transform">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 text-primary">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 text-primary transition-transform duration-300 group-hover:scale-110">
                       <Icon className="w-6 h-6" />
                     </div>
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {service.description}
                     </p>
-                    {/* <p className="text-xs text-muted-foreground/80 line-clamp-3">
-                      {service.content}
-                    </p> */}
                   </CardContent>
                 </Card>
               </motion.div>

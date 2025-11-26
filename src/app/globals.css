@@ -40,51 +40,97 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   :root {
-    /* Default = light theme (fallback) */
-    --color-background: #f5f7fa;
+    /* Light Theme - Professional AI/Fullstack Developer */
+    --color-background: #f8fafc;
     --color-surface: #ffffff;
-    --color-border: #e3e8ee;
-    --color-foreground: #1a1a1a;
-    --color-muted: #6b7280;
+    --color-border: #e2e8f0;
+    --color-foreground: #0f172a;
+    --color-muted: #64748b;
 
-    --color-accent: #004d61;
-    --color-accent-light: #e6f1f4;
-    --color-accent-dark: #003545;
+    /* Primary - Cyan Tech */
+    --color-primary: #0ea5e9;
+    --color-primary-hover: #0284c7;
+    --color-primary-light: #e0f2fe;
 
-    --color-primary: #007c91;
-    --color-secondary: #4f6d7a;
+    /* Secondary - Deep Blue */
+    --color-secondary: #3b82f6;
+    --color-secondary-hover: #2563eb;
 
-    --color-success: #27a87d;
-    --color-danger: #d9534f;
-    --color-warning: #f0ad4e;
+    /* Accent - Purple AI */
+    --color-accent: #8b5cf6;
+    --color-accent-light: #f3e8ff;
+    --color-accent-dark: #6d28d9;
 
-    --radius-lg: 12px;
-    --radius-md: 10px;
+    /* Status Colors */
+    --color-success: #10b981;
+    --color-danger: #ef4444;
+    --color-warning: #f59e0b;
+    --color-info: #06b6d4;
+
+    /* Shadows & Effects */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 20px rgb(14 165 233 / 0.3);
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --glass-blur: blur(10px);
+
+    /* Radius */
+    --radius-lg: 16px;
+    --radius-md: 12px;
     --radius-sm: 8px;
+    --radius-full: 9999px;
   }
 
   .dark {
-    --color-background: #0f1215; /* Fundo geral escuro */
-    --color-surface: #1a1d21; /* Cartões, seções, blocos */
-    --color-border: #2c3238; /* Bordas, divisórias, inputs */
-    --color-foreground: #f1f5f9; /* Texto principal claro */
-    --color-muted: #9ca3af; /* Texto secundário / detalhes */
+    /* Dark Theme - Professional AI/Fullstack Developer */
+    --color-background: #0a0e1a;
+    --color-surface: #111827;
+    --color-border: #1f2937;
+    --color-foreground: #f1f5f9;
+    --color-muted: #94a3b8;
 
-    --color-accent: #4dc4dd; /* Azul acentuado mais claro */
-    --color-accent-light: #193b44; /* Versão mais clara para hover/backgrounds */
-    --color-accent-dark: #007c91; /* Versão forte para interações */
+    /* Primary - Bright Cyan */
+    --color-primary: #06b6d4;
+    --color-primary-hover: #0891b2;
+    --color-primary-light: #164e63;
 
-    --color-primary: #00bcd4; /* Azul mais vibrante para destaque */
-    --color-secondary: #7a9ea8; /* Azul acinzentado elegante mais claro */
+    /* Secondary - Vibrant Blue */
+    --color-secondary: #3b82f6;
+    --color-secondary-hover: #2563eb;
 
-    --color-success: #3fd3aa; /* Verde suave claro para sucesso */
-    --color-danger: #ff6b6b; /* Vermelho claro mais vibrante */
-    --color-warning: #ffc66e; /* Amarelo dourado claro */
+    /* Accent - Vivid Purple AI */
+    --color-accent: #a855f7;
+    --color-accent-light: #581c87;
+    --color-accent-dark: #7c3aed;
+
+    /* Status Colors */
+    --color-success: #22c55e;
+    --color-danger: #f87171;
+    --color-warning: #fbbf24;
+    --color-info: #22d3ee;
+
+    /* Shadows & Effects */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6);
+    --shadow-glow: 0 0 30px rgb(6 182 212 / 0.4);
+
+    /* Glassmorphism */
+    --glass-bg: rgba(17, 24, 39, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-blur: blur(12px);
   }
 }
 
@@ -100,5 +146,57 @@
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .glass-effect {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+  }
+
+  .gradient-primary {
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 100%
+    );
+  }
+
+  .gradient-accent {
+    background: linear-gradient(
+      135deg,
+      var(--color-accent) 0%,
+      var(--color-primary) 100%
+    );
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-accent) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
   }
 }

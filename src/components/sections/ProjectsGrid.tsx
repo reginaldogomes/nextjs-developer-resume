@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Github, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink, ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Badge } from '@/components/ui/badge'
 import {
@@ -53,19 +53,11 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card">
-                <div className="relative h-48 w-full overflow-hidden bg-muted">
-                  {/* Placeholder for image if not available or valid */}
-                  <div className="absolute inset-0 flex items-center justify-center text-muted-foreground bg-secondary">
-                    <span className="text-sm">Image Placeholder</span>
+              <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border-border/50 bg-card will-change-transform">
+                <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                  <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
+                    <span className="text-sm font-medium">Project Preview</span>
                   </div>
-                  {/* Uncomment when images are real */}
-                  {/* <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 hover:scale-105"
-                  /> */}
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
@@ -127,7 +119,5 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
     </section>
   )
 }
-
-import { ArrowRight } from 'lucide-react'
 
 export default ProjectsGrid

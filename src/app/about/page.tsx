@@ -22,22 +22,6 @@ export default function Page() {
         />
 
         {/* Hero Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {aboutData.name}
-          </h1>
-          <p className="text-xl text-primary font-medium mb-4">
-            {aboutData.title}
-          </p>
-          <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed text-lg">
-            {aboutData.slogan}
-          </p>
-        </motion.div>
 
         {/* Sections */}
         <div className="space-y-12">

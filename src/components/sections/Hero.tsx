@@ -19,8 +19,8 @@ const Hero: React.FC<HeroProps> = ({ name, title, slogan }) => {
     <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-primary/10 blur-3xl opacity-50" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-500/10 blur-3xl opacity-30" />
+        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-primary/20 to-accent/20 blur-3xl opacity-60 animate-pulse" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-secondary/20 to-primary/20 blur-3xl opacity-40" />
       </div>
 
       <Container>
@@ -31,16 +31,13 @@ const Hero: React.FC<HeroProps> = ({ name, title, slogan }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-primary font-medium tracking-wide uppercase text-sm mb-4">
+              <h2 className="text-primary font-medium tracking-wide uppercase text-sm md:text-base mb-4">
                 {title}
               </h2>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
-                Olá, eu sou <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
-                  {name}
-                </span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                <span className="text-gradient">{name}</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 {slogan}
               </p>
             </motion.div>
@@ -54,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ name, title, slogan }) => {
               <Button
                 asChild
                 size="lg"
-                className="rounded-full px-8 h-12 text-base"
+                className="rounded-full px-8 h-12 text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <Link href="/contact">
                   Fale Comigo <ArrowRight className="ml-2 w-4 h-4" />
@@ -64,7 +61,7 @@ const Hero: React.FC<HeroProps> = ({ name, title, slogan }) => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 h-12 text-base"
+                className="rounded-full px-8 h-12 text-base hover:bg-primary/10 transition-all duration-300"
               >
                 <Link href="/projects">Ver Projetos</Link>
               </Button>

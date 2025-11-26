@@ -77,19 +77,21 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {skillsData.map(({ icon, title, description }: Skill) => {
             const Icon = iconMap[icon] || FaCode
             return (
               <div
                 key={title}
-                className="bg-card border border-border p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center group"
+                className="bg-card border border-border p-4 md:p-6 rounded-xl shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-primary/50 flex flex-col items-center text-center group will-change-transform"
               >
-                <div className="w-16 h-16 rounded-full bg-secondary/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="h-8 w-8 text-primary" />
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="h-7 w-7 md:h-8 md:w-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <h3 className="text-base md:text-lg font-semibold mb-2">
+                  {title}
+                </h3>
+                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                   {description}
                 </p>
               </div>
