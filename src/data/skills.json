@@ -1,0 +1,82 @@
+[
+  {
+    "icon": "react",
+    "title": "React",
+    "description": "Desenvolvimento de interfaces modernas, reativas e baseadas em componentes."
+  },
+  {
+    "icon": "next",
+    "title": "Next.js",
+    "description": "Framework React para produção com SSR, Server Actions e otimizações de performance."
+  },
+  {
+    "icon": "typescript",
+    "title": "TypeScript",
+    "description": "Tipagem estática para código mais seguro, escalável e fácil de manter em todo o stack."
+  },
+  {
+    "icon": "javascript",
+    "title": "JavaScript (ES6+)",
+    "description": "Domínio profundo da linguagem tanto no front-end quanto no back-end."
+  },
+  {
+    "icon": "node",
+    "title": "Node.js",
+    "description": "Desenvolvimento de APIs REST, serviços backend e microservices escaláveis."
+  },
+  {
+    "icon": "nestjs",
+    "title": "NestJS",
+    "description": "Framework Node.js progressivo para construir aplicações server-side eficientes e escaláveis."
+  },
+  {
+    "icon": "express",
+    "title": "Express.js",
+    "description": "Framework web minimalista e flexível para Node.js, ideal para APIs e backends."
+  },
+  {
+    "icon": "postgresql",
+    "title": "PostgreSQL",
+    "description": "Banco de dados relacional robusto para aplicações complexas e de alta performance."
+  },
+  {
+    "icon": "prisma",
+    "title": "Prisma ORM",
+    "description": "ORM moderno e type-safe para Node.js e TypeScript, simplificando acesso a dados."
+  },
+  {
+    "icon": "mongodb",
+    "title": "MongoDB",
+    "description": "Banco de dados NoSQL flexível para aplicações que demandam escalabilidade horizontal."
+  },
+  {
+    "icon": "tailwind",
+    "title": "Tailwind CSS",
+    "description": "Estilização ágil e consistente com utility-first CSS e design responsivo."
+  },
+  {
+    "icon": "zustand",
+    "title": "Zustand",
+    "description": "Gerenciamento de estado global leve, rápido e escalável para React."
+  },
+  {
+    "icon": "react-query",
+    "title": "React Query",
+    "description": "Gerenciamento eficiente de estado do servidor, cache e sincronização de dados."
+  },
+  {
+    "icon": "docker",
+    "title": "Docker",
+    "description": "Containerização de aplicações para ambientes consistentes e deploy simplificado."
+  },
+  {
+    "icon": "github",
+    "title": "Git & GitHub",
+    "description": "Versionamento de código, fluxos de CI/CD e colaboração em equipe."
+  },
+  {
+    "icon": "api",
+    "title": "REST & GraphQL",
+    "description": "Design e implementação de APIs escaláveis seguindo padrões REST e GraphQL."
+  }
+]

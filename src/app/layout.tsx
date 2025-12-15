@@ -3,14 +3,12 @@ import { GoogleTagManager } from '@/components/GoogleTagManager'
 
 import type { Metadata } from 'next'
 import './globals.css'
-import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
-import Main from '@/components/layout/Main'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 import FloatingButton from '@/components/FloatingButton'
 import { usePathname } from 'next/navigation'
 
-import { sourceCodePro } from './fonts'
-import ThemeToggle from '@/components/ThemeToggle'
+import { inter, sourceCodePro } from './fonts'
 
 export default function RootLayout({
   children,
@@ -20,8 +18,11 @@ export default function RootLayout({
   const pathname = usePathname()
 
   return (
-    <html lang="pt-BR" className={`${sourceCodePro.variable}`}>
-      <body className="font-mono bg-surface">
+    <html
+      lang="pt-BR"
+      className={`dark ${inter.variable} ${sourceCodePro.variable}`}
+    >
+      <body className="font-sans bg-background text-foreground transition-colors duration-300">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N78BQVKX"
@@ -33,11 +34,9 @@ export default function RootLayout({
 
         <GoogleTagManager gtmId="GTM-N78BQVKX" />
         <Header />
-        <Main>
-          {children}
-          <ThemeToggle />
-        </Main>
+        <main className="flex-1">{children}</main>
         <Footer />
+        <FloatingButton />
       </body>
     </html>
   )

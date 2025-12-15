@@ -1,0 +1,28 @@
+{
+  "name": "Reginaldo Gomes",
+  "title": "Desenvolvedor Fullstack | JavaScript/TypeScript",
+  "slogan": "Criando soluções completas end-to-end com React, Node.js e tecnologias do ecossistema JavaScript.",
+  "image": "/images/profile.jpg",
+  "sections": [
+    {
+      "icon": "👋",
+      "title": "Olá! Sou Reginaldo Gomes",
+      "description": "Desenvolvedor Fullstack especializado no ecossistema JavaScript/TypeScript. Com experiência sólida tanto no front-end (React, Next.js) quanto no back-end (Node.js, Express, NestJS), crio aplicações web completas, escaláveis e performáticas."
+    },
+    {
+      "icon": "💻",
+      "title": "Especialização",
+      "description": "Minha expertise abrange todo o stack de desenvolvimento web: interfaces modernas com React e Next.js no front-end, APIs robustas com Node.js e NestJS no back-end, bancos de dados relacionais e NoSQL, e infraestrutura em nuvem (Azure, AWS). Domino TypeScript, arquitetura de software e padrões de design para entregar soluções de alta qualidade."
+    },
+    {
+      "icon": "🚀",
+      "title": "Abordagem",
+      "description": "Acredito em construir aplicações completas que entreguem valor real. Por isso, combino conhecimento técnico profundo em front-end e back-end com boas práticas de arquitetura, testes, CI/CD e monitoramento. Meu foco é criar soluções escaláveis, seguras e com excelente experiência do usuário."
+    },
+    {
+      "icon": "🌱",
+      "title": "Além do Código",
+      "description": "Quando não estou codando, gosto de explorar novas tecnologias do ecossistema JavaScript, contribuir com a comunidade open-source e me manter atualizado sobre arquitetura de software, DevOps e tendências de desenvolvimento web."
+    }
+  ]
+}

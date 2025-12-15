@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/__reginaldogomes_",
+    "icon": "FaInstagram"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/reginaldogomesalves/",
+    "icon": "FaLinkedin"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://www.github.com/reginaldogomes/",
+    "icon": "FaGithub"
+  }
+]

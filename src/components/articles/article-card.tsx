@@ -12,6 +12,7 @@ interface Article {
   slug: string
   publishedAt: string
   resumo: string
+  variant: 'solid' | 'outline'
 }
 
 export function ArticleCard({ article }: { article: Article }) {
@@ -28,7 +29,7 @@ export function ArticleCard({ article }: { article: Article }) {
       <p className="text-sm text-muted mb-4">{article.resumo}</p>
 
       {/* Correção: Sintaxe do href e consistência da URL */}
-      <CustomLink href={`/artigos/${article.slug}`} variant={'solid'}>
+      <CustomLink href={`/article/${article.slug}`} variant={'solid'}>
         Ler artigo <FiArrowRight className="w-4 h-4" />
       </CustomLink>
     </div>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "E-commerce Platform",
+    "description": "Uma plataforma de comércio eletrônico completa com carrinho de compras, checkout e integração de pagamentos.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+    "image": "/images/projects/ecommerce.webp",
+    "link": "#",
+    "github": "#"
+  },
+  {
+    "id": "2",
+    "title": "Dashboard Corporativo",
+    "description": "Painel administrativo para gestão de dados e análise de métricas em tempo real.",
+    "tags": ["React", "Recharts", "Material UI", "Firebase"],
+    "image": "/images/projects/dashboard.webp",
+    "link": "#",
+    "github": "#"
+  },
+  {
+    "id": "3",
+    "title": "Landing Page SaaS",
+    "description": "Página de alta conversão para um produto SaaS, otimizada para SEO e performance.",
+    "tags": ["Astro", "Tailwind CSS", "Framer Motion"],
+    "image": "/images/projects/saas.webp",
+    "link": "#",
+    "github": "#"
+  },
+  {
+    "id": "4",
+    "title": "App de Gestão Financeira",
+    "description": "Aplicação web para controle de finanças pessoais com gráficos e relatórios.",
+    "tags": ["Vue.js", "Nuxt", "Supabase"],
+    "image": "/images/projects/finance.webp",
+    "link": "#",
+    "github": "#"
+  }
+]
